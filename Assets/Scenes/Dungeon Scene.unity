@@ -7120,7 +7120,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246955520}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1283197, y: 0.960575, z: 0.60973454}
@@ -24117,6 +24117,7 @@ MonoBehaviour:
   _earthRuneCountText: {fileID: 1653619147}
   _fireRuneCountText: {fileID: 1931241244}
   _waterRuneTrigger: {fileID: 246955523}
+  waterRuneLimit: 3
 --- !u!1001 &795861302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47161,6 +47162,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ce8cc834ba277844da67143cfc370fa8, type: 3}
+--- !u!1 &1477947129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+  m_PrefabInstance: {fileID: 2072814092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1478579637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66537,13 +66543,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7716928369626413981, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
 --- !u!4 &2072814093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5385696490453015566, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
   m_PrefabInstance: {fileID: 2072814092}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2072814097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477947129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.20292926, y: 0.07046477, z: 0.19802594}
+  m_Center: {x: 0.00033123433, y: 0.03523236, z: 0.0037153345}
 --- !u!1001 &2073016448
 PrefabInstance:
   m_ObjectHideFlags: 0
