@@ -35,15 +35,17 @@ public class WaterRuneTrigger : MonoBehaviour
 
 	private void Start()
 	{
-		_waterRuneRegexPattern = @"Rune_Water";
+		_waterRuneRegexPattern = @"^Rune_Water";
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
-		// The idea here, is to put regex so that it can take "GameObjectName" + " (anyDigit)" into account
+		// Takes into account any game object beginning with "Rune_Water" inside its name
 		if (Regex.IsMatch(other.gameObject.name, _waterRuneRegexPattern))
 		{
 			waterRuneCount += 1;
+			// Should add like some bubbles or something that goes with watter on destroy
+			Destroy(other.gameObject);
 		}
 	}
 }
