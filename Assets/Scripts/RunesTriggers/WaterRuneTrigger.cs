@@ -5,6 +5,8 @@ public class WaterRuneTrigger : MonoBehaviour
 {
 	[SerializeField] RunesCount _runesCount;
 
+	private string _waterRuneRegexPattern;
+
 	#region Properties
 	private int waterRuneCount = 0;
 	public int WaterRuneCount
@@ -26,19 +28,22 @@ public class WaterRuneTrigger : MonoBehaviour
 				value = 3;
 			}
 
-			waterRuneCount = value;
+			this.waterRuneCount = value;
 		}
 	}
 	#endregion
 
+	private void Start()
+	{
+		_waterRuneRegexPattern = @"Rune_Water";
+	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		// The idea here, is to put regex so that it can take "GameObjectName" + " (anyDigit)" into account
-		if (other.gameObject.name == "Rune_Water" + " (2)")
+		if (Regex.IsMatch(other.gameObject.name, _waterRuneRegexPattern))
 		{
 			waterRuneCount += 1;
-			Debug.Log("Water rune triggered");
 		}
 	}
 }
