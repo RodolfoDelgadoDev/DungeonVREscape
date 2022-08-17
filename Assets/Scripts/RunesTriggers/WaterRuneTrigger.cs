@@ -5,8 +5,6 @@ public class WaterRuneTrigger : MonoBehaviour
 {
 	[SerializeField] RunesCount _runesCount;
 
-	private string _waterRuneRegexPattern;
-
 	#region Properties
 	private int waterRuneCount = 0;
 	public int WaterRuneCount
@@ -33,15 +31,10 @@ public class WaterRuneTrigger : MonoBehaviour
 	}
 	#endregion
 
-	private void Start()
-	{
-		_waterRuneRegexPattern = @"^Rune_Water";
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		// Takes into account any game object beginning with "Rune_Water" inside its name
-		if (Regex.IsMatch(other.gameObject.name, _waterRuneRegexPattern))
+		if (other.gameObject.tag == "Rune Water")
 		{
 			waterRuneCount += 1;
 			// Should add like some bubbles or something that goes with watter on destroy
