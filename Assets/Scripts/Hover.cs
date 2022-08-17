@@ -15,8 +15,6 @@ public class Hover : MonoBehaviour
 	{
 		float y = Mathf.Sin(Time.time * _waveFrequency) * _waveAmplitude;
 
-
-
 		transform.localPosition = new Vector3(transform.position.x, startYPosition + y, transform.position.z);
 	}
 }

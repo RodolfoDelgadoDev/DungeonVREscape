@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Text.RegularExpressions;
 
 public class WaterRuneTrigger : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class WaterRuneTrigger : MonoBehaviour
 	{
 		get
 		{
-			return waterRuneCount;
+			return this.waterRuneCount;
 		}
 		private set
 		{
@@ -23,7 +22,7 @@ public class WaterRuneTrigger : MonoBehaviour
 			// Set limit to the water rune limit variable
 			else if (value > _runesCount.WaterRuneLimit)
 			{
-				value = 3;
+				value = (int)_runesCount.WaterRuneLimit;
 			}
 
 			this.waterRuneCount = value;
@@ -31,12 +30,12 @@ public class WaterRuneTrigger : MonoBehaviour
 	}
 	#endregion
 
+	// Trigger with water runes
 	private void OnTriggerEnter(Collider other)
 	{
-		// Takes into account any game object beginning with "Rune_Water" inside its name
 		if (other.gameObject.tag == "Rune Water")
 		{
-			waterRuneCount += 1;
+			this.waterRuneCount += 1;
 			// Should add like some bubbles or something that goes with watter on destroy
 			Destroy(other.gameObject);
 		}

@@ -17124,6 +17124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_09 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -18977,7 +18981,7 @@ GameObject:
   - component: {fileID: 610236201}
   - component: {fileID: 610236200}
   m_Layer: 5
-  m_Name: EarthRuneText
+  m_Name: BrownBookText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22531,6 +22535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ea7ea366dbff74ca64ce80d08ded8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _runesCount: {fileID: 790063543}
 --- !u!1001 &745069376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24125,7 +24130,11 @@ MonoBehaviour:
   _earthRuneCountText: {fileID: 1653619147}
   _fireRuneCountText: {fileID: 1931241244}
   _waterRuneTrigger: {fileID: 246955523}
+  _earthRuneTrigger: {fileID: 1506306129}
+  _fireRuneTrigger: {fileID: 740586078}
   waterRuneLimit: 3
+  brownBookLimit: 1
+  redBookLimit: 3
 --- !u!1001 &795861302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47971,6 +47980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7449795575434a4283a30e74cda95cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _runesCount: {fileID: 790063543}
 --- !u!1001 &1510595998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61151,6 +61161,10 @@ PrefabInstance:
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_Name
       value: Book (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_TagString
+      value: Rune Fire
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_StaticEditorFlags
