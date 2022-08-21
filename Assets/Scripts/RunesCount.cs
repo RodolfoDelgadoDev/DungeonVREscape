@@ -17,7 +17,7 @@ public class RunesCount : MonoBehaviour
 
 	#region Properties
 	[Space(1)]
-	[Header("Input limit")]
+	[Header("Runes Limits")]
 	[SerializeField] private uint waterRuneLimit = 3;
 	public uint WaterRuneLimit { get { return this.waterRuneLimit; } }
 
