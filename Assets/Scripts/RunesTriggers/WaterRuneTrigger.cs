@@ -1,8 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class WaterRuneTrigger : MonoBehaviour
 {
 	[SerializeField] RunesCount _runesCount;
+	[SerializeField] GameObject _waterFire;
+	[SerializeField] float _waterFireTime = 2.5f;
+	[SerializeField] GameObject[] _doors;
 
 	#region Properties
 	private int waterRuneCount = 0;
@@ -30,14 +34,34 @@ public class WaterRuneTrigger : MonoBehaviour
 	}
 	#endregion
 
+	// Enable WaterFire game object for a certain time
+	// Disable it after that
+	private IEnumerator	WaterFireEnableTime()
+	{
+		_waterFire.SetActive(true);
+
+		yield return new WaitForSeconds(this._waterFireTime);
+
+		_waterFire.SetActive(false);
+	}
+
 	// Trigger with water runes
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Rune Water")
 		{
 			this.waterRuneCount += 1;
-			// Should add like some bubbles or something that goes with watter on destroy
 			Destroy(other.gameObject);
+			// Add sound
+			StartCoroutine(WaterFireEnableTime());
+			// Add sound
+			if (_runesCount.WaterRuneLimit == this.WaterRuneCount)
+			{
+				foreach (GameObject go in _doors)
+				{
+					go.SetActive(false);
+				}
+			}
 		}
 	}
 }
