@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Hovering the canvases.
+/// </summary>
 public class Hover : MonoBehaviour
 {
 	[SerializeField] private float _waveAmplitude = 0.1f, _waveFrequency = 1f;
@@ -7,6 +10,7 @@ public class Hover : MonoBehaviour
 
 	private void Start()
 	{
+		// Get the Y position at start
 		startYPosition = transform.position.y;
 	}
 
@@ -14,7 +18,7 @@ public class Hover : MonoBehaviour
 	void Update()
 	{
 		float y = Mathf.Sin(Time.time * _waveFrequency) * _waveAmplitude;
-
+		// Hovering
 		transform.localPosition = new Vector3(transform.position.x, startYPosition + y, transform.position.z);
 	}
 }
