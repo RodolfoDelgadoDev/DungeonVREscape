@@ -9,12 +9,12 @@ public class FireRuneTrigger : MonoBehaviour
 	[SerializeField] GameObject[] _doors;
 
 	#region Properties
-	private int redBookCount = 0;
-	public int RedBookCount
+	private int fireRuneCount = 0;
+	public int FireRuneCount
 	{
 		get
 		{
-			return this.redBookCount;
+			return this.fireRuneCount;
 		}
 		private set
 		{
@@ -24,12 +24,12 @@ public class FireRuneTrigger : MonoBehaviour
 				value = 0;
 			}
 			// Set limit to the red book limit variable
-			else if (value > _runesCount.RedBookLimit)
+			else if (value > _runesCount.FireRuneLimit)
 			{
-				value = (int)_runesCount.RedBookLimit;
+				value = (int)_runesCount.FireRuneLimit;
 			}
 
-			this.redBookCount = value;
+			this.fireRuneCount = value;
 		}
 	}
 	#endregion
@@ -50,12 +50,12 @@ public class FireRuneTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Rune Fire")
 		{
-			this.redBookCount += 1;
+			this.fireRuneCount += 1;
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 			// Add sound
-			if (_runesCount.BrownBookLimit == this.RedBookCount)
+			if (_runesCount.FireRuneLimit == this.FireRuneCount)
 			{
 				foreach (GameObject go in _doors)
 				{
