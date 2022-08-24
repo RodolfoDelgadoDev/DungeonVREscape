@@ -5,16 +5,16 @@ public class EarthRuneTrigger : MonoBehaviour
 {
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _earthFire;
-	[SerializeField] float _eartFireTime = 2.5f;
+	[SerializeField] float _earthFireTime = 2.5f;
 	[SerializeField] GameObject[] _doors;
 
 	#region Properties
-	private int brownBookCount = 0;
-	public int BrownBookCount
+	private int earthRuneCount = 0;
+	public int EarthRuneCount
 	{
 		get
 		{
-			return this.brownBookCount;
+			return this.earthRuneCount;
 		}
 		private set
 		{
@@ -24,12 +24,12 @@ public class EarthRuneTrigger : MonoBehaviour
 				value = 0;
 			}
 			// Set limit to the red book limit variable
-			else if (value > _runesCount.BrownBookLimit)
+			else if (value > _runesCount.EarthRuneLimit)
 			{
-				value = (int)_runesCount.BrownBookLimit;
+				value = (int)_runesCount.EarthRuneLimit;
 			}
 
-			this.brownBookCount = value;
+			this.earthRuneCount = value;
 		}
 	}
 	#endregion
@@ -40,7 +40,7 @@ public class EarthRuneTrigger : MonoBehaviour
 	{
 		_earthFire.SetActive(true);
 
-		yield return new WaitForSeconds(this._eartFireTime);
+		yield return new WaitForSeconds(this._earthFireTime);
 
 		_earthFire.SetActive(false);
 	}
@@ -50,12 +50,12 @@ public class EarthRuneTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Rune Earth")
 		{
-			this.brownBookCount += 1;
+			this.earthRuneCount += 1;
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 			// Add sound
-			if (_runesCount.BrownBookLimit == this.BrownBookCount)
+			if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
 			{
 				foreach (GameObject go in _doors)
 				{
