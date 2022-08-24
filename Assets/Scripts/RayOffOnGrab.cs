@@ -15,7 +15,7 @@ public class RayOffOnGrab : MonoBehaviour
 	/// </summary>
 	public void LeftHandRayOff()
 	{
-		_leftXRInteractorLineVisual.enabled = false;
+		//_leftXRInteractorLineVisual.enabled = false;
 	}
 
 	/// <summary>
@@ -23,7 +23,7 @@ public class RayOffOnGrab : MonoBehaviour
 	/// </summary>
 	public void LeftHandRayOn()
 	{
-		_leftXRInteractorLineVisual.enabled = true;
+		//_leftXRInteractorLineVisual.enabled = true;
 	}
 
 	/// <summary>
@@ -31,7 +31,7 @@ public class RayOffOnGrab : MonoBehaviour
 	/// </summary>
 	public void RightHandRayOff()
 	{
-		_rightXRInteractorLineVisual.enabled = false;
+		//_rightXRInteractorLineVisual.enabled = false;
 	}
 
 	/// <summary>
@@ -39,6 +39,6 @@ public class RayOffOnGrab : MonoBehaviour
 	/// </summary>
 	public void RightHandRayOn()
 	{
-		_rightXRInteractorLineVisual.enabled = true;
+		//_rightXRInteractorLineVisual.enabled = true;
 	}
 }
