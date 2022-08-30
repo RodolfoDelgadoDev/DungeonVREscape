@@ -10,6 +10,7 @@ public class CountDownTimer : MonoBehaviour
     [SerializeField] float startTime = 5f;
     [SerializeField] Slider slider;
     [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] AudioSource audioTimer;
 
     float timer = 0f;
 
@@ -34,6 +35,10 @@ public class CountDownTimer : MonoBehaviour
             timer -= Time.deltaTime;
             slider.value = timer / startTime;
             FormatText();
+            if(slider.value == 0.4f)
+            {
+                audioTimer.Play();
+            }
             yield return null;
         }
         while (timer > 0);
