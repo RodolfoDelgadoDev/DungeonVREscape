@@ -1886,7 +1886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47369580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Potions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3122,6 +3122,10 @@ PrefabInstance:
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_Name
       value: Box_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9615,8 +9619,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 140206972}
-  m_Layer: 0
-  m_Name: Interactable
+  m_Layer: 7
+  m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9845,6 +9849,10 @@ PrefabInstance:
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_Name
       value: Rune_Water (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_TagString
@@ -10796,6 +10804,10 @@ PrefabInstance:
     - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
       propertyPath: m_Name
       value: Candle_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12424,6 +12436,10 @@ PrefabInstance:
     - target: {fileID: 5005760627857633368, guid: c62d0079cb54a16439441d5b6d2c65f2, type: 3}
       propertyPath: m_Name
       value: Crystal_Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005760627857633368, guid: c62d0079cb54a16439441d5b6d2c65f2, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5005760627857633368, guid: c62d0079cb54a16439441d5b6d2c65f2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14734,6 +14750,10 @@ PrefabInstance:
       value: Rune_Air
       objectReference: {fileID: 0}
     - target: {fileID: 2681554997340827474, guid: 7afa4be00176fa24c8023a4c2be13c69, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2681554997340827474, guid: 7afa4be00176fa24c8023a4c2be13c69, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -14957,6 +14977,10 @@ PrefabInstance:
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_Name
       value: Book (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15809,6 +15833,10 @@ PrefabInstance:
       value: Bottle_05
       objectReference: {fileID: 0}
     - target: {fileID: 374151818356740834, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 374151818356740834, guid: 0c837400ef1130c4196d20ee30637d9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -16566,7 +16594,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1907275252520156, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_Name
-      value: MoonSword 6b
+      value: WaterSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907275252520156, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907275252520156, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_RootOrder
@@ -16574,19 +16610,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.23
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.342
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.99
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16594,7 +16630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalRotation.z
@@ -16606,7 +16642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4806514186181128, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -21927,6 +21963,10 @@ PrefabInstance:
       value: Rune_Fire
       objectReference: {fileID: 0}
     - target: {fileID: 4972122498736581013, guid: 104981d4eb0956f499c1ee4e41afc747, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4972122498736581013, guid: 104981d4eb0956f499c1ee4e41afc747, type: 3}
       propertyPath: m_TagString
       value: Rune Fire
       objectReference: {fileID: 0}
@@ -23080,6 +23120,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &397538336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1907275252520156, guid: f800fcc198377b4408a28f2715b1a60d, type: 3}
+  m_PrefabInstance: {fileID: 355363900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &400080921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7321574654408805322, guid: e5854f0558dd1cd479bee15f89757e40, type: 3}
@@ -23807,6 +23852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LongHandlePotion.009
       objectReference: {fileID: 0}
+    - target: {fileID: 4828137370157267272, guid: 205a910bc38518d45895ad35259a70dc, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5209307933161251826, guid: 205a910bc38518d45895ad35259a70dc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24040,6 +24089,10 @@ PrefabInstance:
       value: Book_Fire (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_TagString
       value: Rune Fire
       objectReference: {fileID: 0}
@@ -24057,7 +24110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.265
+      value: 1.039
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24442,6 +24495,10 @@ PrefabInstance:
       value: Book_Earth (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_TagString
       value: Rune Earth
       objectReference: {fileID: 0}
@@ -24455,7 +24512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: 1.025
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24546,6 +24603,10 @@ PrefabInstance:
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_Name
       value: Box_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25079,6 +25140,10 @@ PrefabInstance:
     - target: {fileID: 7366954682194477841, guid: ef37f8b2fcc5f2b4db9000ef0a3aa86f, type: 3}
       propertyPath: m_Name
       value: Potion_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366954682194477841, guid: ef37f8b2fcc5f2b4db9000ef0a3aa86f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7366954682194477841, guid: ef37f8b2fcc5f2b4db9000ef0a3aa86f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26900,6 +26965,10 @@ PrefabInstance:
       value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -27623,6 +27692,105 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.9990404, z: 0.39999998}
   m_Center: {x: 0.00000023841858, y: 1.5004798, z: 0}
+--- !u!1001 &526878838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 850004741}
+    m_Modifications:
+    - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_Name
+      value: WaterPuzzleChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 850004740}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenWaterPuzzleChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Chests, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+--- !u!4 &526878839 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+  m_PrefabInstance: {fileID: 526878838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &526878840 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1411132079502203045, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+  m_PrefabInstance: {fileID: 526878838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &529169262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28717,7 +28885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 560315890}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuzzlesEarth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29615,6 +29783,10 @@ PrefabInstance:
       value: Book_Earth
       objectReference: {fileID: 0}
     - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_TagString
       value: Rune Earth
       objectReference: {fileID: 0}
@@ -29628,7 +29800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.117
+      value: 0.94799995
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30727,7 +30899,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1685191339952272, guid: 806c4885915e0154fb0310372bc86ced, type: 3}
       propertyPath: m_Name
-      value: MoonSword 4b
+      value: EarthSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685191339952272, guid: 806c4885915e0154fb0310372bc86ced, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4625644238675832, guid: 806c4885915e0154fb0310372bc86ced, type: 3}
       propertyPath: m_RootOrder
@@ -31836,7 +32012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 685341415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Swords
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32036,6 +32212,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.9990404, z: 0.39999998}
   m_Center: {x: 0.00000023841858, y: 1.5004798, z: 0}
+--- !u!1 &692998248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1685191339952272, guid: 806c4885915e0154fb0310372bc86ced, type: 3}
+  m_PrefabInstance: {fileID: 649550340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &695948218
 GameObject:
   m_ObjectHideFlags: 0
@@ -33495,6 +33676,10 @@ PrefabInstance:
       value: Book (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -33899,6 +34084,10 @@ PrefabInstance:
       value: Book_Fire (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_TagString
       value: Rune Fire
       objectReference: {fileID: 0}
@@ -33916,7 +34105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.407
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33971,6 +34160,10 @@ PrefabInstance:
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_Name
       value: Rune_Water (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_TagString
@@ -34392,9 +34585,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685341415}
     m_Modifications:
+    - target: {fileID: 2175411400520955638, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411400834290532, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_Name
       value: SwordExample (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791658, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_RootOrder
@@ -36250,6 +36459,10 @@ PrefabInstance:
       value: Book_Earth (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_TagString
       value: Rune Earth
       objectReference: {fileID: 0}
@@ -36263,7 +36476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4910219
+      value: 1.107
       objectReference: {fileID: 0}
     - target: {fileID: 5859313293803644140, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37035,6 +37248,10 @@ PrefabInstance:
       value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -37529,13 +37746,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53694734f70426c47b7fe0923429360a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waterPuzzleChest: {fileID: 8536304459358057834}
+  _waterPuzzleChest: {fileID: 526878840}
   _waterBossChest: {fileID: 639217572}
   _earthPuzzleChest: {fileID: 0}
   _earthBossChest: {fileID: 0}
   _firePuzzleChest: {fileID: 0}
   _fireBossChest: {fileID: 0}
+  _spawnChest: {fileID: 0}
+  _openChest: {fileID: 1659462815}
   _gameManager: {fileID: 2084683735}
+  _waterSword: {fileID: 397538336}
+  _earthSword: {fileID: 692998248}
+  _fireSword: {fileID: 1522271340}
+  _swordUpSpeed: 0.07
 --- !u!4 &850004741
 Transform:
   m_ObjectHideFlags: 0
@@ -37548,8 +37771,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8587639706181751946}
   - {fileID: 1286774152}
+  - {fileID: 526878839}
   m_Father: {fileID: 38937145}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39749,6 +39972,10 @@ PrefabInstance:
       value: Box_02
       objectReference: {fileID: 0}
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -40479,6 +40706,10 @@ PrefabInstance:
       value: Book_Fire
       objectReference: {fileID: 0}
     - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943829022777390022, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_TagString
       value: Rune Fire
       objectReference: {fileID: 0}
@@ -40496,7 +40727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.125
+      value: 0.96800005
       objectReference: {fileID: 0}
     - target: {fileID: 5753298916663224700, guid: 87e534bab4718d7439326c36cd3a448c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42674,6 +42905,10 @@ PrefabInstance:
       value: Chair_05
       objectReference: {fileID: 0}
     - target: {fileID: 907737577407192764, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 907737577407192764, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -43035,6 +43270,10 @@ PrefabInstance:
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_Name
       value: Rune_Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_TagString
@@ -43957,7 +44196,7 @@ GameObject:
   - component: {fileID: 1050929283}
   - component: {fileID: 1050929282}
   - component: {fileID: 1050929281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particles (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49703,6 +49942,10 @@ PrefabInstance:
       value: Wand
       objectReference: {fileID: 0}
     - target: {fileID: 5610066221699201362, guid: ec344f2ab10557444aa669425a264bac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610066221699201362, guid: ec344f2ab10557444aa669425a264bac, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -51153,6 +51396,10 @@ PrefabInstance:
       value: Book_09
       objectReference: {fileID: 0}
     - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957231571477918332, guid: 92d4430c1aabefa4691079bac409cbf9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -51367,6 +51614,10 @@ PrefabInstance:
     - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
       propertyPath: m_Name
       value: Candle_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6630375654688184054, guid: c79d59d66358e0f45a098f4b8a82f8be, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -56634,7 +56885,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1612738821831882, guid: fe4758ae6aa922442a8e2ddabb84ecdd, type: 3}
       propertyPath: m_Name
-      value: MoonSword 5b
+      value: FireSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612738821831882, guid: fe4758ae6aa922442a8e2ddabb84ecdd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4035219563349196, guid: fe4758ae6aa922442a8e2ddabb84ecdd, type: 3}
       propertyPath: m_RootOrder
@@ -57188,7 +57443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57797,6 +58052,10 @@ PrefabInstance:
     - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
       propertyPath: m_Name
       value: Wood_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -60774,9 +61033,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685341415}
     m_Modifications:
+    - target: {fileID: 2175411400520955638, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411400834290532, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_Name
       value: SwordExample (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791658, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_RootOrder
@@ -61532,6 +61807,10 @@ PrefabInstance:
     - target: {fileID: 4667762267172184599, guid: 0778feffdbad99241b124082dea58926, type: 3}
       propertyPath: m_Name
       value: HandlePotion.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667762267172184599, guid: 0778feffdbad99241b124082dea58926, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4667762267172184599, guid: 0778feffdbad99241b124082dea58926, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -63748,9 +64027,8 @@ GameObject:
   - component: {fileID: 1445636273}
   - component: {fileID: 1445636275}
   - component: {fileID: 1445636276}
-  - component: {fileID: 1445636277}
   - component: {fileID: 1445636278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63823,20 +64101,6 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 1326002206}
   m_MinHeight: 1.4
   m_MaxHeight: 1.7
---- !u!114 &1445636277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445636272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7eba56607cb074595c7851cf3dc397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _leftXRInteractorLineVisual: {fileID: 354133434}
-  _rightXRInteractorLineVisual: {fileID: 1766451492}
 --- !u!114 &1445636278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65843,6 +66107,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.9990404, z: 0.39999998}
   m_Center: {x: 0.00000023841858, y: 1.5004798, z: 0}
+--- !u!1 &1522271340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1612738821831882, guid: fe4758ae6aa922442a8e2ddabb84ecdd, type: 3}
+  m_PrefabInstance: {fileID: 1275148525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1522923036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65937,6 +66206,10 @@ PrefabInstance:
     - target: {fileID: 907737577407192764, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
       propertyPath: m_Name
       value: Chair_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 907737577407192764, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 907737577407192764, guid: 3c94a574020d3de429d0c295b3a83db4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -68876,6 +69149,10 @@ PrefabInstance:
       value: Box_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -70088,7 +70365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645641665}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuzzlesWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70559,13 +70836,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1659462814}
+  - component: {fileID: 1659462815}
   m_Layer: 0
-  m_Name: OpenTreasure
+  m_Name: OpenTreasureChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1659462814
 Transform:
   m_ObjectHideFlags: 0
@@ -70581,6 +70859,102 @@ Transform:
   m_Father: {fileID: 2049836362}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1659462815
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659462813}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 2938461926252751234, guid: 4b9d4ec9d5c939141b40c01f21765af9, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 1cc733089121c6d498371058d933029e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 127
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1664659072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71286,6 +71660,10 @@ PrefabInstance:
     - target: {fileID: 2192894554390681948, guid: 2576efb9203f9fa498ecafe26bc862fb, type: 3}
       propertyPath: m_Name
       value: HandlePotion.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192894554390681948, guid: 2576efb9203f9fa498ecafe26bc862fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2576efb9203f9fa498ecafe26bc862fb, type: 3}
@@ -73011,7 +73389,7 @@ GameObject:
   - component: {fileID: 1742434343}
   - component: {fileID: 1742434342}
   - component: {fileID: 1742434341}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particles (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80168,6 +80546,10 @@ PrefabInstance:
       value: Rune_Earth (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7321574654408805322, guid: e5854f0558dd1cd479bee15f89757e40, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321574654408805322, guid: e5854f0558dd1cd479bee15f89757e40, type: 3}
       propertyPath: m_TagString
       value: Rune Earth
       objectReference: {fileID: 0}
@@ -80372,6 +80754,10 @@ PrefabInstance:
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_Name
       value: Rune_Water (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_TagString
@@ -90963,7 +91349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991987069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuzzlesFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91928,7 +92314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2019454845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuzzlesAir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93487,6 +93873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_Outline
       objectReference: {fileID: 0}
+    - target: {fileID: 6453827997805480345, guid: 9aa067a6af366d64e9abbc8361407a1c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3084711985846343562, guid: 9aa067a6af366d64e9abbc8361407a1c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9aa067a6af366d64e9abbc8361407a1c, type: 3}
@@ -93826,6 +94216,10 @@ PrefabInstance:
     - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
       propertyPath: m_Name
       value: Wood_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8178109065456489191, guid: 5062c1312f2beb14694d90a058d444e4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -94392,7 +94786,7 @@ GameObject:
   - component: {fileID: 2065719722}
   - component: {fileID: 2065719721}
   - component: {fileID: 2065719720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particles (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99267,6 +99661,10 @@ PrefabInstance:
       value: Rune_Water (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752993882721306292, guid: 732684f84792f9144bcd6776350d4fd0, type: 3}
       propertyPath: m_TagString
       value: Rune Water
       objectReference: {fileID: 0}
@@ -102554,9 +102952,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685341415}
     m_Modifications:
+    - target: {fileID: 2175411400520955638, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411400834290532, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_Name
       value: SwordExample
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175411402213791657, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2175411402213791658, guid: 1b5475e5bb4832a49960b95e91e2bf90, type: 3}
       propertyPath: m_RootOrder
@@ -102844,7 +103258,7 @@ PrefabInstance:
     - target: {fileID: 4231362983033765144, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1445636277}
+      objectReference: {fileID: 0}
     - target: {fileID: 4231362983033765144, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -102852,11 +103266,15 @@ PrefabInstance:
     - target: {fileID: 4231362983033765144, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1445636277}
+      objectReference: {fileID: 0}
     - target: {fileID: 4231362983033765144, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1445636278}
+    - target: {fileID: 4231362983033765145, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
+      propertyPath: m_AnimateModel
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4231362983033765148, guid: 28d0f25973723a246a1e1e077aaebce1, type: 3}
       propertyPath: m_Name
       value: LeftHand Controller
@@ -102921,7 +103339,7 @@ PrefabInstance:
     - target: {fileID: 6144495238852076009, guid: 13140ed2781d9de4094481bf493710a7, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1445636277}
+      objectReference: {fileID: 0}
     - target: {fileID: 6144495238852076009, guid: 13140ed2781d9de4094481bf493710a7, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -102929,7 +103347,7 @@ PrefabInstance:
     - target: {fileID: 6144495238852076009, guid: 13140ed2781d9de4094481bf493710a7, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1445636277}
+      objectReference: {fileID: 0}
     - target: {fileID: 6144495238852076009, guid: 13140ed2781d9de4094481bf493710a7, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -102988,126 +103406,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13140ed2781d9de4094481bf493710a7, type: 3}
---- !u!1001 &7341521103472143823
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 850004741}
-    m_Modifications:
-    - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_Name
-      value: WaterPuzzleChest
-      objectReference: {fileID: 0}
-    - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.272
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_CustomReticle
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 850004739}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 850004740}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenWaterPuzzleChest
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Chests, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587639706181751947, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
---- !u!95 &8536304459358057834 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1411132079502203045, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-  m_PrefabInstance: {fileID: 7341521103472143823}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8587639706181751946 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-  m_PrefabInstance: {fileID: 7341521103472143823}
-  m_PrefabAsset: {fileID: 0}

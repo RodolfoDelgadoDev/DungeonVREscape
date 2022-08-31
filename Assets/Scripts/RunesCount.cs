@@ -39,4 +39,20 @@ public class RunesCount : MonoBehaviour
 		// numbers of fire runes found / number of fire runes to find
 		_fireRuneCountText.text = $"{_gameManager.fireRuneTrigger.FireRuneCount}/{FireRuneLimit}";
 	}
+
+	/// <summary>
+	/// If all water runes are found,
+	/// makes the water chest appear
+	/// </summary>
+	/// <param name="waterPuzzleChest"></param>
+	public void WaterRunesFound(GameObject waterPuzzleChest)
+	{
+		if (waterPuzzleChest.activeSelf)
+			return;
+
+		if (_gameManager.waterRuneTrigger.WaterRuneCount == WaterRuneLimit)
+		{
+			waterPuzzleChest.SetActive(true);
+		}
+	}
 }

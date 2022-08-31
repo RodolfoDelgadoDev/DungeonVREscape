@@ -25,25 +25,21 @@ public class ReticleOffOnGrab : MonoBehaviour
 
 	public void LeftHandOnGrab()
 	{
-		//_leftXRInteractorLineVisual.reticle = null;
 		_leftGrabReticle.enabled = false;
 	}
 
 	public void LeftHandOffGrab()
 	{
-		//_leftXRInteractorLineVisual.reticle = _grabReticle;
 		_leftGrabReticle.enabled = true;
 	}
 
 	public void RightHandOnGrab()
 	{
-		//_rightXRInteractorLineVisual.reticle = null;
 		_rightGrabReticle.enabled = false;
 	}
 
 	public void RightHandOffGrab()
 	{
-		//_rightXRInteractorLineVisual.reticle = _grabReticle;
 		_rightGrabReticle.enabled = true;
 	}
 }
