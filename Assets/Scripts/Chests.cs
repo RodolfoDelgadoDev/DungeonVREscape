@@ -8,9 +8,9 @@ public class Chests : MonoBehaviour
 	#region Variables
 	#region Chests Variables
 	[Header("Puzzle Chests Animators")]
-	public Animator _waterPuzzleChestAnimator;
-	public Animator _earthPuzzleChestAnimator;
-	public Animator _firePuzzleChestAnimator;
+	[SerializeField] Animator _waterPuzzleChestAnimator;
+	[SerializeField] Animator _earthPuzzleChestAnimator;
+	[SerializeField] Animator _firePuzzleChestAnimator;
 
 	[Space(1)]
 	[Header("Chests Sounds")]
@@ -27,13 +27,17 @@ public class Chests : MonoBehaviour
 	[SerializeField] private GameObject _waterSword;
 	[SerializeField] private GameObject _earthSword;
 	[SerializeField] private GameObject _fireSword;
+
+	private bool _waterChestOpened = false;
 	#endregion
 
 	private void Update()
 	{
-		_gameManager.runesCount.WaterRunesFound(_waterPuzzleChestAnimator.gameObject.transform.parent.gameObject);
-
-		//_waterSword.GetComponent<Swords>().GrabbedSword(_waterPuzzleChestAnimator);
+		if (_waterChestOpened == false)
+		{
+			// Makes water chest appear when the runes are found
+			_gameManager.runesCount.WaterRunesFound(_waterPuzzleChestAnimator.gameObject.transform.parent.gameObject);
+		}
 	}
 
 	/// <summary>
@@ -42,10 +46,15 @@ public class Chests : MonoBehaviour
 	/// </summary>
 	public void OpenWaterPuzzleChest()
 	{
-		// Open chest animation
-		_waterPuzzleChestAnimator.SetTrigger("Open");
-		// Wait for the open chest animation to stop playing
-		StartCoroutine(WaitOpenChestAnim());
+		if (_waterChestOpened == false)
+		{
+			// Open chest animation
+			_waterPuzzleChestAnimator.SetTrigger("Open");
+			// Wait for the open chest animation to stop playing
+			StartCoroutine(WaitOpenChestAnim());
+
+			_waterChestOpened = true;
+		}
 	}
 
 	// Wait for the open chest animation to stop playing, then

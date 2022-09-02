@@ -10,11 +10,6 @@ public class Swords : MonoBehaviour
 
 	private bool _wasSelected = false;
 
-	private void Update()
-	{
-
-	}
-
 	public void OnFirstSelectEntered()
 	{
 		if (_wasSelected == false)
