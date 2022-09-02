@@ -119,11 +119,18 @@ public class Chests : MonoBehaviour
 		// Open animation time
 		float timeToWait = animationClips[2].length;
 
+		// Audio source of the chest
+		AudioSource audioSource = chestAnimator.transform.parent.gameObject.GetComponent<AudioSource>();
+
 		// Wait for Open animation to finish
 		yield return new WaitForSeconds(timeToWait);
 
-		// Chest sound for treasure
-		_openChestSfx.enabled = true;
+		// Give open chest sfx clip
+		audioSource.clip = _openChestSfx.clip;
+
+		// Enable the audio source
+		audioSource.enabled = true;
+
 		// Sword appear after animation
 		sword.SetActive(true);
 	}

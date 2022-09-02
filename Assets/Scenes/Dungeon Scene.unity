@@ -27273,11 +27273,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1411132079502203045, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
   m_PrefabInstance: {fileID: 526878838}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &526878841 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7331568696903626290, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
-  m_PrefabInstance: {fileID: 526878838}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &529169262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37042,7 +37037,7 @@ MonoBehaviour:
   _earthPuzzleChestAnimator: {fileID: 865289625}
   _firePuzzleChestAnimator: {fileID: 127333496}
   _spawnChestSfx: {fileID: 0}
-  _openChestSfx: {fileID: 526878841}
+  _openChestSfx: {fileID: 1659462815}
   _gameManager: {fileID: 2084683735}
   _waterSword: {fileID: 1907274897701088}
   _earthSword: {fileID: 1685190707843732}
@@ -64913,7 +64908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1659462814
 Transform:
   m_ObjectHideFlags: 0
@@ -64936,14 +64931,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659462813}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2938461926252751234, guid: 4b9d4ec9d5c939141b40c01f21765af9, type: 2}
   m_audioClip: {fileID: 8300000, guid: 1cc733089121c6d498371058d933029e, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

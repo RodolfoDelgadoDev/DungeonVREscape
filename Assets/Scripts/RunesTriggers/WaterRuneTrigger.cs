@@ -9,12 +9,12 @@ public class WaterRuneTrigger : MonoBehaviour
 	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
-	private int waterRuneCount = 0;
+	private int _waterRuneCount = 0;
 	public int WaterRuneCount
 	{
 		get
 		{
-			return this.waterRuneCount;
+			return this._waterRuneCount;
 		}
 		private set
 		{
@@ -26,10 +26,10 @@ public class WaterRuneTrigger : MonoBehaviour
 			// Set limit to the water rune limit variable
 			else if (value > _runesCount.WaterRuneLimit)
 			{
-				value = (int)_runesCount.WaterRuneLimit;
+				value = _runesCount.WaterRuneLimit;
 			}
 
-			this.waterRuneCount = value;
+			this._waterRuneCount = value;
 		}
 	}
 	#endregion
@@ -50,7 +50,7 @@ public class WaterRuneTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Rune Water")
 		{
-			this.waterRuneCount += 1;
+			this.WaterRuneCount += 1;
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());

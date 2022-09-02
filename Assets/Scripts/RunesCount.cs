@@ -16,20 +16,21 @@ public class RunesCount : MonoBehaviour
 	#region Properties
 	[Space(1)]
 	[Header("Runes Limits")]
-	[SerializeField] private uint waterRuneLimit = 3;
-	public uint WaterRuneLimit { get { return this.waterRuneLimit; } }
+	[SerializeField] private int _waterRuneLimit = 3;
+	public int WaterRuneLimit { get { return this._waterRuneLimit; } }
 
-	[SerializeField] private uint earthRuneLimit = 1;
-	public uint EarthRuneLimit { get { return this.earthRuneLimit; } }
+	[SerializeField] private uint _earthRuneLimit = 1;
+	public uint EarthRuneLimit { get { return this._earthRuneLimit; } }
 
-	[SerializeField] private uint fireRuneLimit = 3;
-	public uint FireRuneLimit { get { return this.fireRuneLimit; } }
+	[SerializeField] private uint _fireRuneLimit = 3;
+	public uint FireRuneLimit { get { return this._fireRuneLimit; } }
 	#endregion
 
 
 	// Update is called once per frame
 	void Update()
 	{
+		Debug.Log(WaterRuneLimit);
 		// numbers of water runes found / number of water runes to find
 		_waterRuneCountText.text = $"{_gameManager.waterRuneTrigger.WaterRuneCount}/{WaterRuneLimit}";
 
