@@ -30,7 +30,6 @@ public class RunesCount : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		Debug.Log(WaterRuneLimit);
 		// numbers of water runes found / number of water runes to find
 		_waterRuneCountText.text = $"{_gameManager.waterRuneTrigger.WaterRuneCount}/{WaterRuneLimit}";
 
