@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -17,7 +18,18 @@ public class Hover : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		float y = Mathf.Sin(Time.time * _waveFrequency) * _waveAmplitude;
+		Hovering(_waveFrequency, _waveAmplitude);
+	}
+
+	/// <summary>
+	/// Makes an object hover, used in update
+	/// </summary>
+	/// <param name="go">Game Object to hover</param>
+	/// <param name="waveFrequency">The wave time frequency</param>
+	/// <param name="waveAmplitude">The wave amplitude</param>
+	public void Hovering(float waveFrequency, float waveAmplitude)
+	{
+		float y = Mathf.Sin(Time.time * waveFrequency) * waveAmplitude;
 		// Hovering
 		transform.localPosition = new Vector3(transform.position.x, startYPosition + y, transform.position.z);
 	}

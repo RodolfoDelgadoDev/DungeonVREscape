@@ -6,15 +6,15 @@ public class EarthRuneTrigger : MonoBehaviour
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _earthFire;
 	[SerializeField] float _earthFireTime = 2.5f;
-	[SerializeField] GameObject[] _doors;
+	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
-	private int earthRuneCount = 0;
+	private int _earthRuneCount = 0;
 	public int EarthRuneCount
 	{
 		get
 		{
-			return this.earthRuneCount;
+			return this._earthRuneCount;
 		}
 		private set
 		{
@@ -23,13 +23,13 @@ public class EarthRuneTrigger : MonoBehaviour
 			{
 				value = 0;
 			}
-			// Set limit to the red book limit variable
+			// Set limit to the earth rune limit limit variable
 			else if (value > _runesCount.EarthRuneLimit)
 			{
 				value = (int)_runesCount.EarthRuneLimit;
 			}
 
-			this.earthRuneCount = value;
+			this._earthRuneCount = value;
 		}
 	}
 	#endregion
@@ -50,18 +50,18 @@ public class EarthRuneTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Rune Earth")
 		{
-			this.earthRuneCount += 1;
+			this.EarthRuneCount += 1;
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 			// Add sound
-			if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
+			/*if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
 			{
 				foreach (GameObject go in _doors)
 				{
 					go.SetActive(false);
 				}
-			}
+			}*/
 		}
 	}
 }

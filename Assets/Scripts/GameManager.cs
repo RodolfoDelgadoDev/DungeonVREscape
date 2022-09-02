@@ -10,4 +10,6 @@ public class GameManager : MonoBehaviour
 	public WaterRuneTrigger waterRuneTrigger;
 	public EarthRuneTrigger earthRuneTrigger;
 	public FireRuneTrigger fireRuneTrigger;
+	public Chests chests;
+	public OpenCloseDoors openCloseDoors;
 }
