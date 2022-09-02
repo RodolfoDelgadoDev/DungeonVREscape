@@ -11,4 +11,5 @@ public class GameManager : MonoBehaviour
 	public EarthRuneTrigger earthRuneTrigger;
 	public FireRuneTrigger fireRuneTrigger;
 	public Chests chests;
+	public OpenDoors openDoors;
 }

@@ -11857,10 +11857,6 @@ MonoBehaviour:
   _runesCount: {fileID: 790063543}
   _waterFire: {fileID: 885407463}
   _waterFireTime: 2.5
-  _doors:
-  - {fileID: 2128319507}
-  - {fileID: 10075753}
-  - {fileID: 937186300}
 --- !u!1001 &249724994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22645,17 +22641,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &397538344 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2584243878072033058, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-  m_PrefabInstance: {fileID: 2584243877758626570}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907274897701088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a94e8a55245e4e4a8335a8e163b55a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &400080921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7321574654408805322, guid: e5854f0558dd1cd479bee15f89757e40, type: 3}
@@ -25256,11 +25241,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1475622151}
+    m_TransformParent: {fileID: 1449879078}
     m_Modifications:
     - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_Name
-      value: Door (6)
+      value: WaterPuzzleDoor
       objectReference: {fileID: 0}
     - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25268,7 +25253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5826582559400492653, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5826582559400492653, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27098,6 +27083,10 @@ PrefabInstance:
     - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
       propertyPath: m_Name
       value: WaterPuzzleChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352340246436825363, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1355370576268327237, guid: 55787e5080ca68d47bb55856dc26b686, type: 3}
       propertyPath: m_RootOrder
@@ -58395,6 +58384,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.9990404, z: 0.39999998}
   m_Center: {x: 0.00000023841858, y: 1.5004798, z: 0}
+--- !u!1 &1449879077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449879078}
+  m_Layer: 0
+  m_Name: WaterDoors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1449879078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449879077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 472516269}
+  - {fileID: 1984898471}
+  m_Father: {fileID: 1475622151}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1456340615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58890,6 +58912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1475622151}
+  - component: {fileID: 1475622152}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
@@ -58915,13 +58938,28 @@ Transform:
   - {fileID: 795861303}
   - {fileID: 631820967}
   - {fileID: 778068770}
-  - {fileID: 472516269}
-  - {fileID: 1984898471}
+  - {fileID: 1449879078}
   - {fileID: 1627752786}
   - {fileID: 206487767}
   m_Father: {fileID: 38937145}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475622152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475622150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daca925b162faf348857ae7230e386c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waterDoors:
+  - {fileID: 2128319507}
+  - {fileID: 10075753}
+  _gameManager: {fileID: 2084683735}
 --- !u!1001 &1475894476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85363,11 +85401,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1475622151}
+    m_TransformParent: {fileID: 1449879078}
     m_Modifications:
     - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_Name
-      value: Door (8)
+      value: WaterBossDoor
       objectReference: {fileID: 0}
     - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -85375,7 +85413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5826582559400492653, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5826582559400492653, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_LocalPosition.x
@@ -97128,6 +97166,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 850004740}
     - target: {fileID: 2265474427443384525, guid: 1307edf9f3b36104686ecf317a9aa0ab, type: 3}
+      propertyPath: openDoors
+      value: 
+      objectReference: {fileID: 1475622152}
+    - target: {fileID: 2265474427443384525, guid: 1307edf9f3b36104686ecf317a9aa0ab, type: 3}
       propertyPath: runesCount
       value: 
       objectReference: {fileID: 790063543}
@@ -97220,42 +97262,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterSword
       objectReference: {fileID: 0}
+    - target: {fileID: 2583890487668888554, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2584243878072033058, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
       propertyPath: _gameManager
       value: 
       objectReference: {fileID: 2084683735}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 397538344}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSelectExited
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSelectEntered
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Swords, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2584243878072033070, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67c68453c3a4a9046a2138385089a939, type: 3}
 --- !u!1001 &4231362982680811684

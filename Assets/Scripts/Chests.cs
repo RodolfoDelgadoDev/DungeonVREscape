@@ -81,10 +81,12 @@ public class Chests : MonoBehaviour
 	public void DisableChest(GameObject sword)
 	{
 		// Disable the right chest depending of the sword name
+		// And open the corresponding doors
 		switch (sword.name)
 		{
 			case "WaterSword":
 				_waterPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				_gameManager.openDoors.OpenWaterDoors(_waterPuzzleChestAnimator.transform.parent.gameObject);
 				break;
 			case "FireSword":
 				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);

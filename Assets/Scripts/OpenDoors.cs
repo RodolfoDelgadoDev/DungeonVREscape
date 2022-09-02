@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class OpenDoors : MonoBehaviour
 {
-	/*#region Doors GameObjects Variables
-	[SerializeField] private GameObject[] _waterRoomsDoors;
-	[SerializeField] private GameObject[] _earthRoomsDoors;
-	[SerializeField] private GameObject[] _fireRoomsDoors;
+	#region Doors GameObjects Variables
+	[SerializeField] private GameObject[] _waterDoors;
+	//[SerializeField] private GameObject[] _earthDoors;
+	//[SerializeField] private GameObject[] _fireDoors;
 	#endregion
 
-	[SerializeField] private GameManager _gameManager;*/
+	[SerializeField] private GameManager _gameManager;
 
-	// Start is called before the first frame update
-	void Start()
+	public void OpenWaterDoors(GameObject chest)
 	{
-
+		if (chest.activeSelf == false)
+		{
+			foreach (GameObject waterDoor in _waterDoors)
+			{
+				waterDoor.SetActive(false);
+			}
+		}
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
-
-	// when chest closed (player grabbed the sword)
+	// when chest disabled
 	// open doors of the chest room
 }
