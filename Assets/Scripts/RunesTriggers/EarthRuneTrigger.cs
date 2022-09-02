@@ -6,7 +6,7 @@ public class EarthRuneTrigger : MonoBehaviour
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _earthFire;
 	[SerializeField] float _earthFireTime = 2.5f;
-	[SerializeField] GameObject[] _doors;
+	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
 	private int earthRuneCount = 0;
@@ -55,13 +55,13 @@ public class EarthRuneTrigger : MonoBehaviour
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 			// Add sound
-			if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
+			/*if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
 			{
 				foreach (GameObject go in _doors)
 				{
 					go.SetActive(false);
 				}
-			}
+			}*/
 		}
 	}
 }

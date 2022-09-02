@@ -55,4 +55,36 @@ public class RunesCount : MonoBehaviour
 			waterPuzzleChest.SetActive(true);
 		}
 	}
+
+	/// <summary>
+	/// If all earth runes are found,
+	/// makes the earth chest appear
+	/// </summary>
+	/// <param name="earthPuzzleChest"></param>
+	public void EarthRunesFound(GameObject earthPuzzleChest)
+	{
+		if (earthPuzzleChest.activeSelf)
+			return;
+
+		if (_gameManager.earthRuneTrigger.EarthRuneCount == EarthRuneLimit)
+		{
+			earthPuzzleChest.SetActive(true);
+		}
+	}
+
+	/// <summary>
+	/// If all fire runes are found,
+	/// makes the fire chest appear
+	/// </summary>
+	/// <param name="firePuzzleChest"></param>
+	public void FireRunesFound(GameObject firePuzzleChest)
+	{
+		if (firePuzzleChest.activeSelf)
+			return;
+
+		if (_gameManager.fireRuneTrigger.FireRuneCount == FireRuneLimit)
+		{
+			firePuzzleChest.SetActive(true);
+		}
+	}
 }

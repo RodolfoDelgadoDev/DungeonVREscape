@@ -6,7 +6,7 @@ public class FireRuneTrigger : MonoBehaviour
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _redFire;
 	[SerializeField] float _redFireTime = 2.5f;
-	[SerializeField] GameObject[] _doors;
+	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
 	private int fireRuneCount = 0;
@@ -55,13 +55,13 @@ public class FireRuneTrigger : MonoBehaviour
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 			// Add sound
-			if (_runesCount.FireRuneLimit == this.FireRuneCount)
+			/*if (_runesCount.FireRuneLimit == this.FireRuneCount)
 			{
 				foreach (GameObject go in _doors)
 				{
 					go.SetActive(false);
 				}
-			}
+			}*/
 		}
 	}
 }

@@ -29,20 +29,40 @@ public class Chests : MonoBehaviour
 	[SerializeField] private GameObject _fireSword;
 
 	private bool _waterChestOpened = false;
+	private bool _earthChestOpened = false;
+	private bool _fireChestOpened = false;
 	#endregion
 
 	private void Update()
+	{
+		RunesFound();
+	}
+
+	// Check if the runes are found
+	private void RunesFound()
 	{
 		if (_waterChestOpened == false)
 		{
 			// Makes water chest appear when the runes are found
 			_gameManager.runesCount.WaterRunesFound(_waterPuzzleChestAnimator.gameObject.transform.parent.gameObject);
 		}
+
+		if (_earthChestOpened == false)
+		{
+			// Makes earth chest appear when the runes are found
+			_gameManager.runesCount.EarthRunesFound(_earthPuzzleChestAnimator.gameObject.transform.parent.gameObject);
+		}
+
+		if (_fireChestOpened == false)
+		{
+			// Makes fire chest appear when the runes are found
+			_gameManager.runesCount.FireRunesFound(_firePuzzleChestAnimator.gameObject.transform.parent.gameObject);
+		}
 	}
 
 	/// <summary>
 	/// Activates when the player trigger the water puzzle chest
-	/// Used on first select entered event
+	/// Used on select entered event
 	/// </summary>
 	public void OpenWaterPuzzleChest()
 	{
@@ -51,17 +71,51 @@ public class Chests : MonoBehaviour
 			// Open chest animation
 			_waterPuzzleChestAnimator.SetTrigger("Open");
 			// Wait for the open chest animation to stop playing
-			StartCoroutine(WaitOpenChestAnim());
+			StartCoroutine(WaitOpenChestAnim(_waterPuzzleChestAnimator, _waterSword));
 
 			_waterChestOpened = true;
 		}
 	}
 
+	/// <summary>
+	/// Activates when the player trigger the earth puzzle chest
+	/// Used on select entered event
+	/// </summary>
+	public void OpenEarthPuzzleChest()
+	{
+		if (_earthChestOpened == false)
+		{
+			// Open chest animation
+			_earthPuzzleChestAnimator.SetTrigger("Open");
+			// Wait for the open chest animation to stop playing
+			StartCoroutine(WaitOpenChestAnim(_earthPuzzleChestAnimator, _earthSword));
+
+			_earthChestOpened = true;
+		}
+	}
+
+	/// <summary>
+	/// Activates when the player trigger the fire puzzle chest
+	/// Used on select entered event
+	/// </summary>
+	public void OpenFirePuzzleChest()
+	{
+		if (_fireChestOpened == false)
+		{
+			// Open chest animation
+			_firePuzzleChestAnimator.SetTrigger("Open");
+			// Wait for the open chest animation to stop playing
+			StartCoroutine(WaitOpenChestAnim(_firePuzzleChestAnimator, _fireSword));
+
+			_fireChestOpened = true;
+		}
+	}
+
 	// Wait for the open chest animation to stop playing, then
 	// Play open chest sfx and sword appears
-	private IEnumerator WaitOpenChestAnim()
+	private IEnumerator WaitOpenChestAnim(Animator chestAnimator, GameObject sword)
 	{
-		AnimationClip[] animationClips = _waterPuzzleChestAnimator.runtimeAnimatorController.animationClips;
+		AnimationClip[] animationClips = chestAnimator.runtimeAnimatorController.animationClips;
 		// Open animation time
 		float timeToWait = animationClips[2].length;
 
@@ -71,14 +125,15 @@ public class Chests : MonoBehaviour
 		// Chest sound for treasure
 		_openChestSfx.enabled = true;
 		// Sword appear after animation
-		_waterSword.SetActive(true);
+		sword.SetActive(true);
 	}
 
 	/// <summary>
-	/// Disable the right chest depending of the sword name
+	/// Disable the right chest (when the sword is grabbed),
+	/// depending of the sword name
 	/// </summary>
 	/// <param name="sword"></param>
-	public void DisableChest(GameObject sword)
+	public void DisableChestSwordGrab(GameObject sword)
 	{
 		// Disable the right chest depending of the sword name
 		// And open the corresponding doors
@@ -86,17 +141,18 @@ public class Chests : MonoBehaviour
 		{
 			case "WaterSword":
 				_waterPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
-				_gameManager.openDoors.OpenWaterDoors(_waterPuzzleChestAnimator.transform.parent.gameObject);
-				break;
-			case "FireSword":
-				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				_gameManager.openCloseDoors.OpenWaterDoors();
 				break;
 			case "EarthSword":
+				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				_gameManager.openCloseDoors.OpenEarthDoors();
+				break;
+			case "FireSword":
 				_earthPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				_gameManager.openCloseDoors.OpenFireDoors();
 				break;
 		}
 	}
 
-	// Find chest spawn sound, like wood sound or heavy wood sound or something popping
-	// Open doors when a chest is disabled
+	// Add smoke when the chest appear and disappear, add smoke sound for both
 }

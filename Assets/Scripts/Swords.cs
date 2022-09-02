@@ -18,7 +18,7 @@ public class Swords : MonoBehaviour
 			GetComponent<Hover>().enabled = false;
 
 			// Disable the right chest depending of the sword name
-			_gameManager.chests.DisableChest(gameObject);
+			_gameManager.chests.DisableChestSwordGrab(gameObject);
 
 			// Remove gravity
 			GetComponent<Rigidbody>().useGravity = true;
