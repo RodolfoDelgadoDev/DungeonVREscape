@@ -16,13 +16,10 @@ public class LifeManager : MonoBehaviour
     /// </summary>
     [SerializeField] GameObject[] Life;
 
-    ///PlayerCollider to detect the damage to the player
-    ///[SerializeField] Collider playerCollider;
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Enemy")
-        {
+        {      
             if (Life[3].activeInHierarchy == true)
                 Life[3].SetActive(false);
             else if (Life[2].activeInHierarchy == true)
@@ -35,4 +32,6 @@ public class LifeManager : MonoBehaviour
                 SceneManager.LoadScene(0);
         }
     }
+
+
 }
