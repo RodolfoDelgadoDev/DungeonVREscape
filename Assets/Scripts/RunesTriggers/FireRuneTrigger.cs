@@ -54,14 +54,6 @@ public class FireRuneTrigger : MonoBehaviour
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
-			// Add sound
-			/*if (_runesCount.FireRuneLimit == this.FireRuneCount)
-			{
-				foreach (GameObject go in _doors)
-				{
-					go.SetActive(false);
-				}
-			}*/
 		}
 	}
 }

@@ -54,14 +54,6 @@ public class EarthRuneTrigger : MonoBehaviour
 			Destroy(other.gameObject);
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
-			// Add sound
-			/*if (_runesCount.EarthRuneLimit == this.EarthRuneCount)
-			{
-				foreach (GameObject go in _doors)
-				{
-					go.SetActive(false);
-				}
-			}*/
 		}
 	}
 }
