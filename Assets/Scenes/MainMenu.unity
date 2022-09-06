@@ -8745,6 +8745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 2972132734462236525, guid: a8a9c149fbf918d478262f87d4c908cd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2972132736136153681, guid: a8a9c149fbf918d478262f87d4c908cd, type: 3}
       propertyPath: m_Reticle
       value: 

@@ -2,16 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// WeakPointsHandler class that defines the damage from the player
+/// </summary>
 public class WeakPointsHandler : MonoBehaviour
 {
+    /// <summary>
+    /// array of hearths
+    /// </summary>
     public GameObject[] hearths;
+
+
     private int count = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-            
-    }
+    /// <summary>
+    /// boss gameobject
+    /// </summary>
+    public GameObject boss;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,15 +30,15 @@ public class WeakPointsHandler : MonoBehaviour
                 if (h.activeInHierarchy == true)
                 {
                     h.SetActive(false);
+                    if (count == 2)
+                        count++;
                     break;
                 }
                 else
                     count++;
             }
             if (count == 3)
-            {
-                ///Play animation of death
-            }
+                boss.SetActive(false);
         }
     }
 }
