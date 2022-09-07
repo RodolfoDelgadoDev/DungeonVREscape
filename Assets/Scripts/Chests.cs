@@ -152,17 +152,14 @@ public class Chests : MonoBehaviour
 			case "WaterSword":
 				_waterPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
 				_gameManager.openCloseDoors.OpenWaterDoors(); // These parts of the code should go in the OpenCloseDoors script
-				Debug.Log($"Case: {sword.name}");
 				break;
 			case "EarthSword":
 				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
 				_gameManager.openCloseDoors.OpenEarthDoors();
-				Debug.Log($"Case: {sword.name}");
 				break;
 			case "FireSword":
 				_earthPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
 				_gameManager.openCloseDoors.OpenFireDoors();
-				Debug.Log($"Case: {sword.name}");
 				break;
 		}
 	}
