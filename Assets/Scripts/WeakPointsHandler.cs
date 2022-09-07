@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 /// <summary>
 /// WeakPointsHandler class that defines the damage from the player
@@ -20,25 +22,30 @@ public class WeakPointsHandler : MonoBehaviour
     /// </summary>
     public GameObject boss;
 
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Sword")
         {
-            foreach(var h in hearths)
+            Vector3 vel = other.gameObject.GetComponent<Rigidbody>().velocity;
+            if (vel.magnitude > 3)
             {
-                if (h.activeInHierarchy == true)
+                foreach(var h in hearths)
                 {
-                    h.SetActive(false);
-                    if (count == 2)
+                    if (h.activeInHierarchy == true)
+                    {
+                        h.SetActive(false);
+                        if (count == 2)
+                            count++;
+                        break;
+                    }
+                    else
                         count++;
-                    break;
                 }
-                else
-                    count++;
+                if (count == 3)
+                    boss.SetActive(false);
             }
-            if (count == 3)
-                boss.SetActive(false);
+
+
         }
     }
 }
