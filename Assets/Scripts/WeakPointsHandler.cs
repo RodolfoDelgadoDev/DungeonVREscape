@@ -43,9 +43,8 @@ public class WeakPointsHandler : MonoBehaviour
                 }
                 if (count == 3)
                     boss.SetActive(false);
+                this.gameObject.SetActive(false);
             }
-
-
         }
     }
 }
