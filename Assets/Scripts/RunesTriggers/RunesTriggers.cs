@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RunesTriggers : MonoBehaviour
 {
@@ -7,8 +8,16 @@ public class RunesTriggers : MonoBehaviour
 	[SerializeField] GameObject _fire;
 	[SerializeField] float _fireTime = 2.5f;
 
+	// string: Rune tag
+	// int: Rune Count
+	private Dictionary<string, int> rune_TagCount = new Dictionary<string, int>();
+
 	#region Runes Count Properties
 	private int _waterRuneCount = 0;
+
+	/// <summary>
+	/// Number of Water rune triggered
+	/// </summary>
 	public int WaterRuneCount
 	{
 		get
@@ -33,6 +42,10 @@ public class RunesTriggers : MonoBehaviour
 	}
 
 	private int _earthRuneCount = 0;
+
+	/// <summary>
+	/// Number of Earth rune triggered
+	/// </summary>
 	public int EarthRuneCount
 	{
 		get
@@ -57,6 +70,10 @@ public class RunesTriggers : MonoBehaviour
 	}
 
 	private int _fireRuneCount = 0;
+
+	/// <summary>
+	/// Number of Fire rune triggered
+	/// </summary>
 	public int FireRuneCount
 	{
 		get
@@ -81,6 +98,13 @@ public class RunesTriggers : MonoBehaviour
 	}
 	#endregion
 
+	private void Awake()
+	{
+		rune_TagCount.Add("Rune Water", this.WaterRuneCount);
+		rune_TagCount.Add("Rune Earth", this.EarthRuneCount);
+		rune_TagCount.Add("Rune Fire", this.FireRuneCount);
+	}
+
 	// Enable Fire game object for a certain time
 	// Disable it after that
 	private IEnumerator FireEnableTime(GameObject fire, float fireTime)
@@ -95,25 +119,32 @@ public class RunesTriggers : MonoBehaviour
 	// Check the rune it is triggering with, increase the value by 1
 	// for each rune and start the fire animation
 	// Used in OnTriggerEnter
-	private void CheckRuneTrigger(string runeTag, int runeCountProperty, GameObject other)
+	private int CheckRuneTrigger(string runeTag, GameObject other)
 	{
 		if (other.tag == runeTag &&
 			this.gameObject.tag == runeTag)
 		{
+			// Does not increase actual property value
+			rune_TagCount[runeTag] += 1;
 			Destroy(other);
 			// Add sound
 			StartCoroutine(FireEnableTime(_fire, _fireTime));
 		}
+
+		return rune_TagCount[runeTag];
 	}
 
 	// Trigger with runes
 	private void OnTriggerEnter(Collider other)
 	{
+		// there is a need to do an algorithm for this part,
+		// But there is not enough time
+
 		// Check Rune Water
-		CheckRuneTrigger("Rune Water", this.WaterRuneCount++, other.gameObject);
+		this.WaterRuneCount = CheckRuneTrigger("Rune Water", other.gameObject);
 		// Check Rune Earth
-		CheckRuneTrigger("Rune Earth", this.EarthRuneCount++, other.gameObject);
+		this.EarthRuneCount = CheckRuneTrigger("Rune Earth", other.gameObject);
 		// Check Rune Fire
-		CheckRuneTrigger("Rune Fire", this.FireRuneCount++, other.gameObject);
+		this.FireRuneCount = CheckRuneTrigger("Rune Fire", other.gameObject);
 	}
 }

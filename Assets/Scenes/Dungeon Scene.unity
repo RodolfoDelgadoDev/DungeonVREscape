@@ -35003,7 +35003,7 @@ MonoBehaviour:
   _waterRuneCountText: {fileID: 1998856569}
   _earthRuneCountText: {fileID: 1653619147}
   _fireRuneCountText: {fileID: 1931241244}
-  _gameManager: {fileID: 0}
+  _gameManager: {fileID: 2084683735}
   _waterRuneLimit: 3
   _earthRuneLimit: 1
   _fireRuneLimit: 3

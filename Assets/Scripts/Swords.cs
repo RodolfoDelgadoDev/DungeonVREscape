@@ -10,17 +10,22 @@ public class Swords : MonoBehaviour
 
 	private bool _wasSelected = false;
 
+	/// <summary>
+	/// Used for the first grab of the sword when it goes out
+	/// of the chest
+	/// </summary>
 	public void OnFirstSelectEntered()
 	{
+		// Condition for the script to work only once per sword
 		if (_wasSelected == false)
 		{
 			// Disable Hover script
 			GetComponent<Hover>().enabled = false;
 
 			// Disable the right chest depending of the sword name
-			_gameManager.chests.DisableChestSwordGrab(gameObject);
+			_gameManager.chests.DisableChestSwordGrab(this.gameObject);
 
-			// Remove gravity
+			// Use gravity
 			GetComponent<Rigidbody>().useGravity = true;
 
 			// Remove Rigidbody constraints
@@ -28,17 +33,18 @@ public class Swords : MonoBehaviour
 
 			_wasSelected = true;
 		}
+
 	}
 
+	/// <summary>
+	/// Used for when the sword is ungrabbed
+	/// </summary>
 	public void OnSelectExited()
 	{
-		if (_wasSelected == true)
-		{
-			// Remove gravity
-			GetComponent<Rigidbody>().useGravity = true;
+		// Use gravity
+		GetComponent<Rigidbody>().useGravity = true;
 
-			// Remove Rigidbody constraints
-			GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-		}
+		// Remove Rigidbody constraints
+		GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 	}
 }

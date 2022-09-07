@@ -87,4 +87,22 @@ public class RunesCount : MonoBehaviour
 			firePuzzleChest.SetActive(true);
 		}
 	}
+
+	/// <summary>
+	/// Check if the correct runes are found
+	/// Did not work correctly, so not used
+	/// </summary>
+	/// <param name="puzzleChest"></param>
+	/// <param name="runeCountProperty"></param>
+	/// <param name="runeLimitProperty"></param>
+	public void RunesFound(GameObject puzzleChest, int runeCountProperty, uint runeLimitProperty)
+	{
+		if (puzzleChest.activeSelf)
+			return;
+
+		if (runeCountProperty == runeLimitProperty)
+		{
+			puzzleChest.SetActive(true);
+		}
+	}
 }

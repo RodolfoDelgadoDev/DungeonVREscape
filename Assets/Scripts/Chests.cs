@@ -35,15 +35,16 @@ public class Chests : MonoBehaviour
 
 	private void Update()
 	{
-		RunesFound();
+		ChestSpawn();
 	}
 
 	// Check if the runes are found
-	private void RunesFound()
+	// And makes the corresponding chest appear
+	private void ChestSpawn()
 	{
 		if (_waterChestOpened == false)
 		{
-			// Makes water chest appear when the runes are found
+			// Makes water chest appear when the water runes are found
 			_gameManager.runesCount.WaterRunesFound(_waterPuzzleChestAnimator.gameObject.transform.parent.gameObject);
 		}
 
@@ -144,19 +145,24 @@ public class Chests : MonoBehaviour
 	{
 		// Disable the right chest depending of the sword name
 		// And open the corresponding doors
+
+		// NOT WORKING CORRECTLY, only disable the first chest
 		switch (sword.name)
 		{
 			case "WaterSword":
 				_waterPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
-				_gameManager.openCloseDoors.OpenWaterDoors();
+				_gameManager.openCloseDoors.OpenWaterDoors(); // These parts of the code should go in the OpenCloseDoors script
+				Debug.Log($"Case: {sword.name}");
 				break;
 			case "EarthSword":
 				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
 				_gameManager.openCloseDoors.OpenEarthDoors();
+				Debug.Log($"Case: {sword.name}");
 				break;
 			case "FireSword":
 				_earthPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
 				_gameManager.openCloseDoors.OpenFireDoors();
+				Debug.Log($"Case: {sword.name}");
 				break;
 		}
 	}

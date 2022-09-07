@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WaterRuneTrigger : MonoBehaviour
 {
-	/*[SerializeField] RunesCount _runesCount;
+	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _waterFire;
 	[SerializeField] float _waterFireTime = 2.5f;
 
@@ -25,7 +25,7 @@ public class WaterRuneTrigger : MonoBehaviour
 			// Set limit to the water rune limit variable
 			else if (value > _runesCount.WaterRuneLimit)
 			{
-				value = _runesCount.WaterRuneLimit;
+				value = (int)_runesCount.WaterRuneLimit;
 			}
 
 			this._waterRuneCount = value;
@@ -54,5 +54,5 @@ public class WaterRuneTrigger : MonoBehaviour
 			// Add sound
 			StartCoroutine(WaterFireEnableTime());
 		}
-	}*/
+	}
 }
