@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class RunesTriggers : MonoBehaviour
 {
-	[SerializeField] RunesCount _runesCount;
+	/*[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _fire;
 	[SerializeField] float _fireTime = 2.5f;
 
@@ -146,5 +146,7 @@ public class RunesTriggers : MonoBehaviour
 		this.EarthRuneCount = CheckRuneTrigger("Rune Earth", other.gameObject);
 		// Check Rune Fire
 		this.FireRuneCount = CheckRuneTrigger("Rune Fire", other.gameObject);
-	}
+
+		Debug.Log($"WaterRuneCount: {this.WaterRuneCount}; EarthRuneCount: {this.EarthRuneCount}, FireRuneCount: {this.FireRuneCount}");
+	}*/
 }

@@ -31,13 +31,13 @@ public class RunesCount : MonoBehaviour
 	void Update()
 	{
 		// numbers of water runes found / number of water runes to find
-		_waterRuneCountText.text = $"{_gameManager.runesTriggers.WaterRuneCount}/{WaterRuneLimit}";
+		_waterRuneCountText.text = $"{_gameManager.waterRuneTrigger.WaterRuneCount}/{WaterRuneLimit}";
 
 		// numbers of earth runes found / number of earth runes to find
-		_earthRuneCountText.text = $"{_gameManager.runesTriggers.EarthRuneCount}/{EarthRuneLimit}";
+		_earthRuneCountText.text = $"{_gameManager.earthRuneTrigger.EarthRuneCount}/{EarthRuneLimit}";
 
 		// numbers of fire runes found / number of fire runes to find
-		_fireRuneCountText.text = $"{_gameManager.runesTriggers.FireRuneCount}/{FireRuneLimit}";
+		_fireRuneCountText.text = $"{_gameManager.fireRuneTrigger.FireRuneCount}/{FireRuneLimit}";
 	}
 
 	/// <summary>
@@ -50,7 +50,7 @@ public class RunesCount : MonoBehaviour
 		if (waterPuzzleChest.activeSelf)
 			return;
 
-		if (_gameManager.runesTriggers.WaterRuneCount == WaterRuneLimit)
+		if (_gameManager.waterRuneTrigger.WaterRuneCount == WaterRuneLimit)
 		{
 			waterPuzzleChest.SetActive(true);
 		}
@@ -66,7 +66,7 @@ public class RunesCount : MonoBehaviour
 		if (earthPuzzleChest.activeSelf)
 			return;
 
-		if (_gameManager.runesTriggers.EarthRuneCount == EarthRuneLimit)
+		if (_gameManager.earthRuneTrigger.EarthRuneCount == EarthRuneLimit)
 		{
 			earthPuzzleChest.SetActive(true);
 		}
@@ -82,27 +82,9 @@ public class RunesCount : MonoBehaviour
 		if (firePuzzleChest.activeSelf)
 			return;
 
-		if (_gameManager.runesTriggers.FireRuneCount == FireRuneLimit)
+		if (_gameManager.fireRuneTrigger.FireRuneCount == FireRuneLimit)
 		{
 			firePuzzleChest.SetActive(true);
-		}
-	}
-
-	/// <summary>
-	/// Check if the correct runes are found
-	/// Did not work correctly, so not used
-	/// </summary>
-	/// <param name="puzzleChest"></param>
-	/// <param name="runeCountProperty"></param>
-	/// <param name="runeLimitProperty"></param>
-	public void RunesFound(GameObject puzzleChest, int runeCountProperty, uint runeLimitProperty)
-	{
-		if (puzzleChest.activeSelf)
-			return;
-
-		if (runeCountProperty == runeLimitProperty)
-		{
-			puzzleChest.SetActive(true);
 		}
 	}
 }

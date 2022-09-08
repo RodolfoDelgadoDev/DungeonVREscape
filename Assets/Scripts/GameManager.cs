@@ -6,8 +6,12 @@ using UnityEngine;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
+	public WaterRuneTrigger waterRuneTrigger;
+	public EarthRuneTrigger earthRuneTrigger;
+	public FireRuneTrigger fireRuneTrigger;
 	public RunesCount runesCount;
-	public RunesTriggers runesTriggers;
 	public Chests chests;
 	public OpenCloseDoors openCloseDoors;
+
+	// SMoke
 }
