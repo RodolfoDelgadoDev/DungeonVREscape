@@ -150,15 +150,15 @@ public class Chests : MonoBehaviour
 		switch (sword.name)
 		{
 			case "WaterSword":
-				_waterPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
-				_gameManager.openCloseDoors.OpenWaterDoors(); // These parts of the code should go in the OpenCloseDoors script
+				StartCoroutine(_gameManager.SmokeOnDisable(_waterPuzzleChestAnimator.transform.parent.gameObject));
+				_gameManager.openCloseDoors.OpenWaterDoors();
 				break;
 			case "EarthSword":
-				_firePuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				StartCoroutine(_gameManager.SmokeOnDisable(_earthPuzzleChestAnimator.transform.parent.gameObject));
 				_gameManager.openCloseDoors.OpenEarthDoors();
 				break;
 			case "FireSword":
-				_earthPuzzleChestAnimator.transform.parent.gameObject.SetActive(false);
+				StartCoroutine(_gameManager.SmokeOnDisable(_firePuzzleChestAnimator.transform.parent.gameObject));
 				_gameManager.openCloseDoors.OpenFireDoors();
 				break;
 		}

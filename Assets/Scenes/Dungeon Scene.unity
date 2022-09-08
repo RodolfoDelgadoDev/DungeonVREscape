@@ -87592,6 +87592,10 @@ PrefabInstance:
       propertyPath: _waterRuneTrigger
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2265474427443384525, guid: 1307edf9f3b36104686ecf317a9aa0ab, type: 3}
+      propertyPath: smokeVfxGameObject
+      value: 
+      objectReference: {fileID: 6813416509558619124, guid: 3b7f2c753d435d647a80f1f047a113e3, type: 3}
     - target: {fileID: 2265474427443384527, guid: 1307edf9f3b36104686ecf317a9aa0ab, type: 3}
       propertyPath: m_Name
       value: GameManager

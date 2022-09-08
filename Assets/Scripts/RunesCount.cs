@@ -52,7 +52,7 @@ public class RunesCount : MonoBehaviour
 
 		if (_gameManager.waterRuneTrigger.WaterRuneCount == WaterRuneLimit)
 		{
-			waterPuzzleChest.SetActive(true);
+			StartCoroutine(_gameManager.SmokeOnSpawn(waterPuzzleChest));
 		}
 	}
 
@@ -68,7 +68,7 @@ public class RunesCount : MonoBehaviour
 
 		if (_gameManager.earthRuneTrigger.EarthRuneCount == EarthRuneLimit)
 		{
-			earthPuzzleChest.SetActive(true);
+			StartCoroutine(_gameManager.SmokeOnSpawn(earthPuzzleChest));
 		}
 	}
 
@@ -84,7 +84,7 @@ public class RunesCount : MonoBehaviour
 
 		if (_gameManager.fireRuneTrigger.FireRuneCount == FireRuneLimit)
 		{
-			firePuzzleChest.SetActive(true);
+			StartCoroutine(_gameManager.SmokeOnSpawn(firePuzzleChest));
 		}
 	}
 }

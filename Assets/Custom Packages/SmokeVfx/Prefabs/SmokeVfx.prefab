@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6650199810314842004}
   - component: {fileID: 6649909595210273182}
   m_Layer: 0
-  m_Name: msVFX_Stylized Smoke 4
+  m_Name: SmokeVfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
