@@ -79600,8 +79600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aec9336dbeaf534b9f57750c955cb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossMovement: {fileID: 0}
-  door: {fileID: 0}
+  bossMovement: {fileID: 1322466273}
+  door: {fileID: 10075753}
 --- !u!1001 &1965646243
 PrefabInstance:
   m_ObjectHideFlags: 0
