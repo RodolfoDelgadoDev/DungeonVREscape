@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 	public Chests chests;
 	public OpenCloseDoors openCloseDoors;
 	public GameObject smokeVfxGameObject;
+	public AudioSource smokeSfx;
 
 	/// <summary>
 	/// Makes smoke appear where the GameObject go is,
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
 		Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
 
 		Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
+		smokeSfx.Play();
 
 		yield return new WaitForSeconds(smokeVfx.main.duration / 1.5f);
 
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
 		Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
 
 		Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
+		smokeSfx.Play();
 
 		yield return new WaitForEndOfFrame();
 
