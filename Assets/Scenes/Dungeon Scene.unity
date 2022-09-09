@@ -2867,6 +2867,9 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
+  door: {fileID: 10075753}
+  spawnMusic: {fileID: 1108332696}
+  battleMusic: {fileID: 1138261504}
 --- !u!135 &72968100
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58621,6 +58624,9 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
+  door: {fileID: 10075753}
+  spawnMusic: {fileID: 1108332696}
+  battleMusic: {fileID: 1138261504}
 --- !u!135 &1456439704
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69959,6 +69965,9 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
+  door: {fileID: 10075753}
+  spawnMusic: {fileID: 1108332696}
+  battleMusic: {fileID: 1138261504}
 --- !u!135 &1802489780
 SphereCollider:
   m_ObjectHideFlags: 0

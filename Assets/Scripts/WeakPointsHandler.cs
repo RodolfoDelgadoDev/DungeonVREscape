@@ -22,6 +22,22 @@ public class WeakPointsHandler : MonoBehaviour
 	/// </summary>
 	public GameObject boss;
 
+	/// <summary>
+	/// door gameObject to open when the boss it's dead
+	/// </summary>
+	public GameObject door;
+
+	/// <summary>
+	/// bossMusic to disable when the battle ends
+	/// </summary>
+	public GameObject spawnMusic;
+
+	/// <summary>
+	/// battleMusic
+	/// </summary>
+	public GameObject battleMusic;
+
+
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Sword")
@@ -42,7 +58,15 @@ public class WeakPointsHandler : MonoBehaviour
 						count++;
 				}
 				if (count == 3)
+                {
+					door.SetActive(false);
+					spawnMusic.SetActive(true);
+					spawnMusic.GetComponent<AudioSource>().Play();
+					battleMusic.GetComponent<AudioSource>().Stop();
+					battleMusic.SetActive(false);
 					boss.SetActive(false);
+                }
+
 				this.gameObject.SetActive(false);
 			}
 		}
