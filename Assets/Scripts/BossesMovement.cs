@@ -15,6 +15,6 @@ public class BossesMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = Vector3.forward * velocity;
+        ///rb.velocity = Vector3.forward * velocity;
     }
 }
