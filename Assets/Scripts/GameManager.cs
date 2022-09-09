@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
 		Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
 
-		yield return new WaitForSeconds(smokeVfx.main.duration / 1.5f);
+		yield return new WaitForEndOfFrame();
 
 		go.SetActive(true);
 	}
