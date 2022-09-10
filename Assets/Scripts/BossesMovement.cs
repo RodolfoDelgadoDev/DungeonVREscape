@@ -5,7 +5,23 @@ using UnityEngine;
 public class BossesMovement : MonoBehaviour
 {
     private Rigidbody rb;
+
+    /// <summary>
+    /// Velocity of the boss
+    /// </summary>
     public float velocity = 1f;
+
+    /// <summary>
+    /// playerTransform
+    /// </summary>
+    public Transform playerTransform;
+
+    public float damping;
+
+    private bool isMoving = true;
+
+    private bool isAtacking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +29,14 @@ public class BossesMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
-        ///rb.velocity = Vector3.forward * velocity;
+        if (isMoving)
+        {
+            var rotation = Quaternion.LookRotation(playerTransform.position - transform.position);
+            rotation.x = 0; 
+            rotation.z = 0;
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+        }
     }
 }
