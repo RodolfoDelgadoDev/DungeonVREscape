@@ -53666,7 +53666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 1
   playerTransform: {fileID: 2972132735951253484}
-  damping: 1
+  damping: 3.5
 --- !u!54 &1322466275
 Rigidbody:
   m_ObjectHideFlags: 0

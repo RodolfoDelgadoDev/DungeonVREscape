@@ -29,7 +29,7 @@ public class BossesMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (isMoving)
         {
@@ -37,6 +37,8 @@ public class BossesMovement : MonoBehaviour
             rotation.x = 0; 
             rotation.z = 0;
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+            Vector3 vectorToPlayer = playerTransform.position - transform.position;
+            rb.velocity = vectorToPlayer.normalized * velocity;
         }
     }
 }
