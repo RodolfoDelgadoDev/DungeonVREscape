@@ -9,6 +9,7 @@ TagManager:
   - Rune Fire
   - Sword
   - Bosses
+  - Enemy
   layers:
   - Default
   - TransparentFX

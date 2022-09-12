@@ -26,11 +26,14 @@ public class BossesMovement : MonoBehaviour
 
     private Animator animator;
 
+    private Collider closeCol;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        closeCol = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -47,7 +50,8 @@ public class BossesMovement : MonoBehaviour
         }
         else
         {
-            animator.Play("Attack");
+            StartCoroutine(Attacking());
+
         }
 
         
@@ -58,10 +62,17 @@ public class BossesMovement : MonoBehaviour
     {
         if (other.tag == "MainCamera" && door.activeInHierarchy == true)
         {
-            Debug.Log("Esta cerca mio");
+            
             isMoving = false;
 
         }
     }
 
+    IEnumerator Attacking()
+    {
+        animator.Play("Attack");
+        yield return new WaitForSeconds(2.5f);
+        animator.Play("Idle01");
+        isMoving = true;
+    }
 }
