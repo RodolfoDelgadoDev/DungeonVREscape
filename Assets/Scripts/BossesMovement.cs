@@ -22,10 +22,15 @@ public class BossesMovement : MonoBehaviour
 
     private bool isAtacking = false;
 
+    public GameObject door;
+
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,5 +45,23 @@ public class BossesMovement : MonoBehaviour
             Vector3 vectorToPlayer = playerTransform.position - transform.position;
             rb.velocity = vectorToPlayer.normalized * velocity;
         }
+        else
+        {
+            animator.Play("Attack");
+        }
+
+        
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "MainCamera" && door.activeInHierarchy == true)
+        {
+            Debug.Log("Esta cerca mio");
+            isMoving = false;
+
+        }
+    }
+
 }

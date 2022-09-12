@@ -12,7 +12,7 @@ public class CountDownTimer : MonoBehaviour
 	/// <summary>
 	/// StartTime
 	/// </summary>
-	[SerializeField] float startTime = 5f;
+	[SerializeField] float startTime = 90f;
 
 	/// <summary>
 	/// UI Slider
@@ -50,9 +50,12 @@ public class CountDownTimer : MonoBehaviour
 		{
 			timer -= Time.deltaTime;
 			slider.value = timer / startTime;
+
 			FormatText();
+
 			if (slider.value == 0.4f)
 				audioTimer.Play();
+
 			yield return null;
 		}
 		while (timer > 0);

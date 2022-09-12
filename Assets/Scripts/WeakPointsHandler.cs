@@ -37,6 +37,8 @@ public class WeakPointsHandler : MonoBehaviour
 	/// </summary>
 	public GameObject battleMusic;
 
+	[SerializeField] GameManager _gameManager;
+
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -58,14 +60,15 @@ public class WeakPointsHandler : MonoBehaviour
 						count++;
 				}
 				if (count == 3)
-                {
+				{
 					door.SetActive(false);
 					spawnMusic.SetActive(true);
 					spawnMusic.GetComponent<AudioSource>().Play();
 					battleMusic.GetComponent<AudioSource>().Stop();
 					battleMusic.SetActive(false);
+					StartCoroutine(_gameManager.SmokeOnDisable(boss));
 					boss.SetActive(false);
-                }
+				}
 
 				this.gameObject.SetActive(false);
 			}
