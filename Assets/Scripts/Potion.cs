@@ -1,28 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handle the potion life points system when the player drink
+/// </summary>
 public class Potion : MonoBehaviour
 {
-	[SerializeField] PlayerHealth _playerHealth;
+	[SerializeField] LifeManager _lifeManager;
+	private GameObject[] _life;
+	[HideInInspector] public bool drink = false;
 
 	/// <summary>
 	/// When player grab a potion,
 	/// give a heart back to the player
 	/// Used on Select Exited
 	/// </summary>
+
+	private void Start()
+	{
+		_life = _lifeManager.Life;
+	}
+
 	public void PlayerDrinkPotion()
 	{
-		// If player is already full health, do nothing
-		if (_playerHealth.Index == _playerHealth.playerHearts.Length - 1)
+		// Potion gives back 2 Life points
+		if (_life[1].activeInHierarchy == false)
 		{
-			return;
+			_life[1].SetActive(true);
+			_life[2].SetActive(true);
 		}
+		else if (_life[2].activeInHierarchy == false)
+		{
+			_life[2].SetActive(true);
+			_life[3].SetActive(true);
+		}
+		else if (_life[3].activeInHierarchy == false)
+		{
+			_life[3].SetActive(true);
+		}
+		else
+			return;
 
-		// Add particles and vfx
-		_playerHealth.Index += 1;
-		_playerHealth.playerHearts[_playerHealth.Index].SetActive(true);
+		drink = true;
+
 		this.gameObject.SetActive(false);
 	}
 }

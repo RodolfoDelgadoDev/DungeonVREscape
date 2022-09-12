@@ -6,7 +6,6 @@ public class EarthRuneTrigger : MonoBehaviour
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _earthFire;
 	[SerializeField] float _earthFireTime = 2.5f;
-	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
 	private int _earthRuneCount = 0;

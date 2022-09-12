@@ -6,7 +6,6 @@ public class FireRuneTrigger : MonoBehaviour
 	[SerializeField] RunesCount _runesCount;
 	[SerializeField] GameObject _redFire;
 	[SerializeField] float _redFireTime = 2.5f;
-	//[SerializeField] GameObject[] _doors;
 
 	#region Properties
 	private int _fireRuneCount = 0;
