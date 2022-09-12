@@ -45,7 +45,7 @@ public class WeakPointsHandler : MonoBehaviour
 		if (other.tag == "Sword")
 		{
 			Vector3 vel = other.gameObject.GetComponent<Rigidbody>().velocity;
-			if (vel.magnitude > 3)
+			if (vel.magnitude >= 3)
 			{
 				foreach (var heart in hearths)
 				{

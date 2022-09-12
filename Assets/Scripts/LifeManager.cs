@@ -19,13 +19,6 @@ public class LifeManager : MonoBehaviour
 	/// </summary>
 	private bool _isImmortal = false;
 
-	private void Start()
-	{
-		Life[3].SetActive(false);
-		Life[2].SetActive(false);
-		Life[1].SetActive(false);
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Enemy" && _isImmortal == false)
