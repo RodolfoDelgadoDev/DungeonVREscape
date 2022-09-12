@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -9,20 +10,6 @@ public class Swords : MonoBehaviour
 	[SerializeField] GameManager _gameManager;
 
 	private bool _wasSelected = false;
-	private Vector3 _swordVelocity = Vector3.zero;
-
-	private void Start()
-	{
-		_swordVelocity = this.gameObject.GetComponent<Rigidbody>().velocity;
-	}
-
-	private void Update()
-	{
-		if (_swordVelocity.magnitude >= 3)
-		{
-			this.gameObject.GetComponent<AudioSource>().Play();
-		}
-	}
 
 	/// <summary>
 	/// Used for the first grab of the sword when it goes out

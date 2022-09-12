@@ -200,7 +200,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Swing
+  m_Name: Slash
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: da7a1a343e5ec94499ee64e857fb05ae
   m_Children: []
@@ -737,7 +737,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 343aae399a90d8a439cda4a49d55fb27
-  m_FloatValues: {}
+  m_FloatValues:
+    8885dfa4d5d4d5d4f96bc1f993db347b: -5
   m_TransitionOverrides: {}
 --- !u!244 &558204970195933254
 AudioMixerEffectController:
