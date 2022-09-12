@@ -16,9 +16,15 @@ public class LifeManager : MonoBehaviour
     /// </summary>
     [SerializeField] GameObject[] Life;
 
+
+    /// <summary>
+    /// Give Inmortality to the player after gets an attack
+    /// </summary>
+    private bool onInmortality = false;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Enemy")
+        if(other.tag == "Enemy" && onInmortality == false)
         {      
             if (Life[3].activeInHierarchy == true)
                 Life[3].SetActive(false);
@@ -27,10 +33,19 @@ public class LifeManager : MonoBehaviour
             else if (Life[1].activeInHierarchy == true)
                 Life[1].SetActive(false);
             else if (Life[0].activeInHierarchy == true)
+            {
                 Life[0].SetActive(false);
-            else
                 SceneManager.LoadScene(0);
+            }
+            onInmortality = true;
+            StartCoroutine(Inmortality());
         }
+    }
+
+    IEnumerator Inmortality()
+    {
+        yield return new WaitForSeconds(3f);
+        onInmortality = false;
     }
 
 

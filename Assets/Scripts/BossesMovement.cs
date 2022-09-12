@@ -26,14 +26,14 @@ public class BossesMovement : MonoBehaviour
 
     private Animator animator;
 
-    private Collider closeCol;
+    private BoxCollider closeCol;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        closeCol = GetComponent<Collider>();
+        closeCol = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -50,6 +50,7 @@ public class BossesMovement : MonoBehaviour
         }
         else
         {
+            
             StartCoroutine(Attacking());
 
         }
@@ -64,9 +65,11 @@ public class BossesMovement : MonoBehaviour
         {
             
             isMoving = false;
-
+            isAtacking = true;
         }
     }
+
+
 
     IEnumerator Attacking()
     {
@@ -74,5 +77,7 @@ public class BossesMovement : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         animator.Play("Idle01");
         isMoving = true;
+        isAtacking = false;
     }
+
 }
