@@ -2838,12 +2838,11 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
-  doorsOnDeath:
-  - {fileID: 10075753}
-  - {fileID: 937186300}
+  doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 843926165}
 --- !u!135 &72968100
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11087,12 +11086,11 @@ MonoBehaviour:
   - {fileID: 425330209}
   - {fileID: 230675032}
   boss: {fileID: 1518860600}
-  doorsOnDeath:
-  - {fileID: 1107485875}
-  - {fileID: 1562749140}
+  doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 414025315}
 --- !u!135 &199509668
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15581,12 +15579,11 @@ MonoBehaviour:
   - {fileID: 91413228}
   - {fileID: 1982634781}
   boss: {fileID: 1403896609}
-  doorsOnDeath:
-  - {fileID: 1487057368}
-  - {fileID: 1882886443}
+  doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 358199491}
 --- !u!135 &316485553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16455,12 +16452,11 @@ MonoBehaviour:
   - {fileID: 425330209}
   - {fileID: 230675032}
   boss: {fileID: 1518860600}
-  doorsOnDeath:
-  - {fileID: 1107485875}
-  - {fileID: 1562749140}
+  doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 414025315}
 --- !u!135 &335604776
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16951,6 +16947,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.9990404, z: 0.39999998}
   m_Center: {x: 0.00000023841858, y: 1.5004798, z: 0}
+--- !u!1 &358199491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071395463374016985, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
+  m_PrefabInstance: {fileID: 817592356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &358199492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071395463374016986, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
@@ -23770,6 +23771,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7186397052036007447, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
   m_PrefabInstance: {fileID: 413198287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &414025315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071395463374016985, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
+  m_PrefabInstance: {fileID: 787336366}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &414025316 stripped
 Transform:
@@ -35252,7 +35258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016985, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016986, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_RootOrder
@@ -36288,7 +36294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016985, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016986, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_RootOrder
@@ -37995,12 +38001,11 @@ MonoBehaviour:
   - {fileID: 425330209}
   - {fileID: 230675032}
   boss: {fileID: 1518860600}
-  doorsOnDeath:
-  - {fileID: 1107485875}
-  - {fileID: 1562749140}
+  doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 414025315}
 --- !u!135 &866424418
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43388,12 +43393,11 @@ MonoBehaviour:
   - {fileID: 91413228}
   - {fileID: 1982634781}
   boss: {fileID: 1403896609}
-  doorsOnDeath:
-  - {fileID: 1487057368}
-  - {fileID: 1882886443}
+  doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 358199491}
 --- !u!135 &1031208502
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59081,12 +59085,11 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
-  doorsOnDeath:
-  - {fileID: 10075753}
-  - {fileID: 937186300}
+  doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 843926165}
 --- !u!135 &1456439704
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66299,12 +66302,11 @@ MonoBehaviour:
   - {fileID: 91413228}
   - {fileID: 1982634781}
   boss: {fileID: 1403896609}
-  doorsOnDeath:
-  - {fileID: 1487057368}
-  - {fileID: 1882886443}
+  doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 358199491}
 --- !u!135 &1674565495
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67745,12 +67747,11 @@ MonoBehaviour:
   - {fileID: 1446704047}
   - {fileID: 1466250385}
   boss: {fileID: 62088382}
-  doorsOnDeath:
-  - {fileID: 10075753}
-  - {fileID: 937186300}
+  doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
+  _swordHint: {fileID: 843926165}
 --- !u!135 &1728204688
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -87776,11 +87777,11 @@ PrefabInstance:
     - target: {fileID: 7068099175268456860, guid: 6ba08deeeb2ab204f8dd8828156f4807, type: 3}
       propertyPath: _openDoor
       value: 
-      objectReference: {fileID: 937186300}
+      objectReference: {fileID: 1562749140}
     - target: {fileID: 7068099175268456860, guid: 6ba08deeeb2ab204f8dd8828156f4807, type: 3}
       propertyPath: _swordHint
       value: 
-      objectReference: {fileID: 843926165}
+      objectReference: {fileID: 414025315}
     - target: {fileID: 7068099175268456860, guid: 6ba08deeeb2ab204f8dd8828156f4807, type: 3}
       propertyPath: _openDoorSfx
       value: 
@@ -87800,7 +87801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016985, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463374016986, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_RootOrder
@@ -88394,11 +88395,11 @@ PrefabInstance:
     - target: {fileID: 4340914554501273418, guid: eee5e1b34ec511e43b1069a075dd556f, type: 3}
       propertyPath: _openDoor
       value: 
-      objectReference: {fileID: 937186300}
+      objectReference: {fileID: 1882886443}
     - target: {fileID: 4340914554501273418, guid: eee5e1b34ec511e43b1069a075dd556f, type: 3}
       propertyPath: _swordHint
       value: 
-      objectReference: {fileID: 843926165}
+      objectReference: {fileID: 358199491}
     - target: {fileID: 4340914554501273418, guid: eee5e1b34ec511e43b1069a075dd556f, type: 3}
       propertyPath: _openDoorSfx
       value: 

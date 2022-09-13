@@ -23,9 +23,9 @@ public class WeakPointsHandler : MonoBehaviour
 	public GameObject boss;
 
 	/// <summary>
-	/// door gameObject to open when the boss it's dead
+	/// door gameObject to open when the boss is dead
 	/// </summary>
-	public GameObject[] doorsOnDeath;
+	public GameObject doorOnDeath;
 
 	/// <summary>
 	/// bossMusic to disable when the battle ends
@@ -38,6 +38,7 @@ public class WeakPointsHandler : MonoBehaviour
 	public GameObject battleMusic;
 
 	[SerializeField] GameManager _gameManager;
+	[SerializeField] GameObject _swordHint;
 
 
 	private void OnTriggerEnter(Collider other)
@@ -61,8 +62,7 @@ public class WeakPointsHandler : MonoBehaviour
 				}
 				if (count == 3)
 				{
-					foreach (GameObject door in doorsOnDeath)
-						door.SetActive(false);
+					doorOnDeath.SetActive(false);
 
 					spawnMusic.SetActive(true);
 					spawnMusic.GetComponent<AudioSource>().Play();
@@ -71,6 +71,7 @@ public class WeakPointsHandler : MonoBehaviour
 					battleMusic.SetActive(false);
 
 					StartCoroutine(_gameManager.SmokeOnDisable(boss));
+					_swordHint.SetActive(true);
 					boss.SetActive(false);
 				}
 
