@@ -10,6 +10,8 @@ TagManager:
   - Sword
   - Bosses
   - Enemy
+  - OpenDoorSword_1
+  - OpenDoorSword_2
   layers:
   - Default
   - TransparentFX

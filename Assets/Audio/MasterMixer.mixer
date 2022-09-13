@@ -135,6 +135,7 @@ AudioMixerGroupController:
   - {fileID: 7685826149224177971}
   - {fileID: 1952676108479825715}
   - {fileID: 6856466573452126440}
+  - {fileID: 5092066522004005105}
   m_Volume: 9fd63b20c95b092479e78943fa099646
   m_Pitch: 1eb13a2fd2c3f4e46bc97f3ad1929db5
   m_Send: 00000000000000000000000000000000
@@ -690,6 +691,7 @@ AudioMixerController:
     - 75ea8c9ce03ee5c4d97f8e0cf078fedc
     - f8e12aa090c9501469fcb6791b386469
     - c3721b5e017320343862602067bea496
+    - ba608649deb6ea64294715a1a94cb76a
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -1040,6 +1042,39 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 2279604507118909445}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &4657100749668310230
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 12d51ccd65e2f294eab22463a1bde762
+  m_EffectName: Attenuation
+  m_MixLevel: 27444dca1c372544d84731423ca51754
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &5092066522004005105
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OpenDoorSword
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: ba608649deb6ea64294715a1a94cb76a
+  m_Children: []
+  m_Volume: da94e9ab65ec00a4db444cc1be7d6fc4
+  m_Pitch: 06d7f25c617a68e4297b1b6464748c71
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 4657100749668310230}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
