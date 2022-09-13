@@ -35136,7 +35136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossMovement: {fileID: 1518860601}
-  door: {fileID: 10075753}
+  door: {fileID: 1107485875}
   combatMusic: {fileID: 1138261504}
   spawnMusic: {fileID: 1108332696}
 --- !u!65 &778879885
