@@ -14,7 +14,6 @@ public class Chests : MonoBehaviour
 
 	[Space(1)]
 	[Header("Chests Sounds")]
-	[SerializeField] private AudioSource _spawnChestSfx;
 	[SerializeField] private AudioSource _openChestSfx;
 	#endregion
 
