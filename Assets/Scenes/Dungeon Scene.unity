@@ -35414,7 +35414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463443575929, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: ColliderSwordHint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
@@ -36497,7 +36497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463443575929, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: ColliderSwordHint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
@@ -88162,7 +88162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071395463443575929, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: ColliderSwordHint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e320a1a32060ddd4dacacfc193e0d681, type: 3}
