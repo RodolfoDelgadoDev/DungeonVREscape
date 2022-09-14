@@ -2843,6 +2843,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &72968100
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11091,6 +11092,7 @@ MonoBehaviour:
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &199509668
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15584,6 +15586,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &316485553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16457,6 +16460,7 @@ MonoBehaviour:
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &335604776
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38157,6 +38161,7 @@ MonoBehaviour:
   battleMusic: {fileID: 394268120}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &866424418
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43588,6 +43593,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &1031208502
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47937,7 +47943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1132145043
 Transform:
   m_ObjectHideFlags: 0
@@ -47963,7 +47969,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5080938311878429239, guid: 4b9d4ec9d5c939141b40c01f21765af9, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 422f0a07dbd847241a23b0ff3961e420, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bf6eed29246df344cbbb51fbb26a1965, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -59269,6 +59275,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &1456439704
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66569,6 +66576,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1046764293}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &1674565495
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68014,6 +68022,7 @@ MonoBehaviour:
   battleMusic: {fileID: 1138261504}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
+  slashSound: {fileID: 1132145042}
 --- !u!135 &1728204688
 SphereCollider:
   m_ObjectHideFlags: 0
