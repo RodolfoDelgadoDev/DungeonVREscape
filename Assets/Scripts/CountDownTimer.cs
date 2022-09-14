@@ -64,7 +64,7 @@ public class CountDownTimer : MonoBehaviour
 		while (timer > 0);
 
 		if (slider.value == 0)
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(2);
 	}
 
 	private void FormatText()

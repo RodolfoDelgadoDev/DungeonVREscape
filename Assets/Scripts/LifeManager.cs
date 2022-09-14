@@ -32,7 +32,7 @@ public class LifeManager : MonoBehaviour
 			else if (Life[0].activeInHierarchy == true)
 			{
 				Life[0].SetActive(false);
-				SceneManager.LoadScene(0);
+				SceneManager.LoadScene(2);
 			}
 			_isImmortal = true;
 			StartCoroutine(Immortality());
