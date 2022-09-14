@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Hovering the canvases.
+/// Hovering the canvases
 /// </summary>
 public class Hover : MonoBehaviour
 {

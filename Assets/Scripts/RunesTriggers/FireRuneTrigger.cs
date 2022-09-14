@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Trigger fire runes
+/// </summary>
 public class FireRuneTrigger : MonoBehaviour
 {
-	[SerializeField] RunesCount _runesCount;
+	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _redFire;
 	[SerializeField] float _redFireTime = 2.5f;
 
@@ -23,9 +26,9 @@ public class FireRuneTrigger : MonoBehaviour
 				value = 0;
 			}
 			// Set limit to fire rune limit variable
-			else if (value > _runesCount.FireRuneLimit)
+			else if (value > _gameManager.runesCount.FireRuneLimit)
 			{
-				value = (int)_runesCount.FireRuneLimit;
+				value = (int)_gameManager.runesCount.FireRuneLimit;
 			}
 
 			this._fireRuneCount = value;
@@ -51,7 +54,7 @@ public class FireRuneTrigger : MonoBehaviour
 		{
 			this.FireRuneCount += 1;
 			Destroy(other.gameObject);
-			// Add sound
+			_gameManager.addOxygen.AddSeconds(30);
 			StartCoroutine(WaterFireEnableTime());
 		}
 	}

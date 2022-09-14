@@ -5,9 +5,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// <summary>
 /// Remove reticle when an object is grabbed,
 /// put it back when it's ungrabbed
-/// <remark>
-/// Still doesn't work, needs fix
-/// </remark>
 /// </summary>
 public class ReticleOffOnGrab : MonoBehaviour
 {

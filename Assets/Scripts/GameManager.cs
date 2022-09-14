@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 	public OpenCloseDoors openCloseDoors;
 	public GameObject smokeVfxGameObject;
 	public AudioSource smokeSfx;
+	public CountDownTimer countDownTimer;
+	public AddOxygen addOxygen;
 
 	/// <summary>
 	/// Makes smoke appear where the GameObject go is,

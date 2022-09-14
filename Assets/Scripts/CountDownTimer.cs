@@ -10,9 +10,14 @@ using UnityEngine.SceneManagement;
 public class CountDownTimer : MonoBehaviour
 {
 	/// <summary>
-	/// StartTime
+	/// Oxygen start time
 	/// </summary>
-	[SerializeField] float startTime = 90f;
+	public float startTime = 90f;
+
+	/// <summary>
+	/// Oxygen count down timer
+	/// </summary>
+	public float timer;
 
 	/// <summary>
 	/// UI Slider
@@ -29,8 +34,6 @@ public class CountDownTimer : MonoBehaviour
 	/// audioTimer to handle the audiosource
 	/// </summary>
 	[SerializeField] AudioSource audioTimer;
-
-	float timer = 0f;
 
 	// Start is called before the first frame update
 	void Start()

@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Trigger Earth runes
+/// </summary>
 public class EarthRuneTrigger : MonoBehaviour
 {
-	[SerializeField] RunesCount _runesCount;
+	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _earthFire;
 	[SerializeField] float _earthFireTime = 2.5f;
 
@@ -23,9 +26,9 @@ public class EarthRuneTrigger : MonoBehaviour
 				value = 0;
 			}
 			// Set limit to the earth rune limit limit variable
-			else if (value > _runesCount.EarthRuneLimit)
+			else if (value > _gameManager.runesCount.EarthRuneLimit)
 			{
-				value = (int)_runesCount.EarthRuneLimit;
+				value = (int)_gameManager.runesCount.EarthRuneLimit;
 			}
 
 			this._earthRuneCount = value;
@@ -51,7 +54,7 @@ public class EarthRuneTrigger : MonoBehaviour
 		{
 			this.EarthRuneCount += 1;
 			Destroy(other.gameObject);
-			// Add sound
+			_gameManager.addOxygen.AddSeconds(30);
 			StartCoroutine(WaterFireEnableTime());
 		}
 	}

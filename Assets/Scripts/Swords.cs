@@ -1,7 +1,10 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
+/// <summary>
+/// Handle the sword grab
+/// </summary>
 [RequireComponent(typeof(Hover))]
 [RequireComponent(typeof(XRGrabInteractable))]
 [RequireComponent(typeof(Rigidbody))]

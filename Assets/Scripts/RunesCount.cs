@@ -1,6 +1,10 @@
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Count number of runes, set runes limit number,
+/// activate chest when runes found
+/// </summary>
 public class RunesCount : MonoBehaviour
 {
 	[Header("Runes Count")]

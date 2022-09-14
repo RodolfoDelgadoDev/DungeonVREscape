@@ -1,8 +1,9 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Audio;
-using UnityEngine.XR.Interaction.Toolkit;
 
+/// <summary>
+/// Handle the chests
+/// </summary>
 public class Chests : MonoBehaviour
 {
 	#region Variables
@@ -144,8 +145,6 @@ public class Chests : MonoBehaviour
 	{
 		// Disable the right chest depending of the sword name
 		// And open the corresponding doors
-
-		// NOT WORKING CORRECTLY, only disable the first chest
 		switch (sword.name)
 		{
 			case "WaterSword":
@@ -162,6 +161,4 @@ public class Chests : MonoBehaviour
 				break;
 		}
 	}
-
-	// Add smoke when the chest appear and disappear, add smoke sound for both
 }

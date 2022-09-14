@@ -46,7 +46,7 @@ public class WeakPointsHandler : MonoBehaviour
 		if (other.tag == "Sword")
 		{
 			Vector3 vel = other.gameObject.GetComponent<Rigidbody>().velocity;
-			if (vel.magnitude >= 3)
+			if (vel.magnitude >= 2)
 			{
 				foreach (var heart in hearths)
 				{
@@ -72,6 +72,7 @@ public class WeakPointsHandler : MonoBehaviour
 
 					StartCoroutine(_gameManager.SmokeOnDisable(boss));
 					_swordHint.SetActive(true);
+					_gameManager.addOxygen.AddSeconds(60);
 					boss.SetActive(false);
 				}
 

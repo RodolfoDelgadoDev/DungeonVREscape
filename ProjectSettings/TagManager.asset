@@ -10,7 +10,7 @@ TagManager:
   - Sword
   - Bosses
   - Enemy
-  - ColliderSwordHit
+  - ColliderSwordHint
   layers:
   - Default
   - TransparentFX

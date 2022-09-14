@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Trigger water runes
+/// </summary>
 public class WaterRuneTrigger : MonoBehaviour
 {
-	[SerializeField] RunesCount _runesCount;
+	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _waterFire;
 	[SerializeField] float _waterFireTime = 2.5f;
 
@@ -23,9 +26,9 @@ public class WaterRuneTrigger : MonoBehaviour
 				value = 0;
 			}
 			// Set limit to the water rune limit variable
-			else if (value > _runesCount.WaterRuneLimit)
+			else if (value > _gameManager.runesCount.WaterRuneLimit)
 			{
-				value = (int)_runesCount.WaterRuneLimit;
+				value = (int)_gameManager.runesCount.WaterRuneLimit;
 			}
 
 			this._waterRuneCount = value;
@@ -51,7 +54,7 @@ public class WaterRuneTrigger : MonoBehaviour
 		{
 			this.WaterRuneCount += 1;
 			Destroy(other.gameObject);
-			// Add sound
+			_gameManager.addOxygen.AddSeconds(30);
 			StartCoroutine(WaterFireEnableTime());
 		}
 	}

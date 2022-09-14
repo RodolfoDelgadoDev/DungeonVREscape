@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Open close doors
+/// </summary>
 public class OpenCloseDoors : MonoBehaviour
 {
 	#region Doors GameObjects Variables
 	[SerializeField] private GameObject[] _waterDoors;
 	[SerializeField] private GameObject[] _earthDoors;
 	[SerializeField] private GameObject[] _fireDoors;
+	public GameObject exitDoor;
 	#endregion
 
 	#region Open Close Doors Functions
