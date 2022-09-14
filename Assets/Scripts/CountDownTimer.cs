@@ -17,7 +17,7 @@ public class CountDownTimer : MonoBehaviour
 	/// <summary>
 	/// Oxygen count down timer
 	/// </summary>
-	public float timer;
+	[HideInInspector] public float timer;
 
 	/// <summary>
 	/// UI Slider

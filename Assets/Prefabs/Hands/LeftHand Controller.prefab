@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 20
+  timer: 0
   slider: {fileID: 1070032997}
   timerText: {fileID: 979103666}
   audioTimer: {fileID: 540858459}
