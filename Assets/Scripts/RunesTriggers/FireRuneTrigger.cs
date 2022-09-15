@@ -1,20 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Trigger fire runes
+/// </summary>
 public class FireRuneTrigger : MonoBehaviour
 {
-	[SerializeField] RunesCount _runesCount;
+	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _redFire;
 	[SerializeField] float _redFireTime = 2.5f;
-	[SerializeField] GameObject[] _doors;
 
 	#region Properties
-	private int redBookCount = 0;
-	public int RedBookCount
+	private int _fireRuneCount = 0;
+	public int FireRuneCount
 	{
 		get
 		{
-			return this.redBookCount;
+			return this._fireRuneCount;
 		}
 		private set
 		{
@@ -23,13 +25,13 @@ public class FireRuneTrigger : MonoBehaviour
 			{
 				value = 0;
 			}
-			// Set limit to the red book limit variable
-			else if (value > _runesCount.RedBookLimit)
+			// Set limit to fire rune limit variable
+			else if (value > _gameManager.runesCount.FireRuneLimit)
 			{
-				value = (int)_runesCount.RedBookLimit;
+				value = (int)_gameManager.runesCount.FireRuneLimit;
 			}
 
-			this.redBookCount = value;
+			this._fireRuneCount = value;
 		}
 	}
 	#endregion
@@ -50,18 +52,10 @@ public class FireRuneTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Rune Fire")
 		{
-			this.redBookCount += 1;
+			this.FireRuneCount += 1;
 			Destroy(other.gameObject);
-			// Add sound
+			_gameManager.addOxygen.AddSeconds(30);
 			StartCoroutine(WaterFireEnableTime());
-			// Add sound
-			if (_runesCount.BrownBookLimit == this.RedBookCount)
-			{
-				foreach (GameObject go in _doors)
-				{
-					go.SetActive(false);
-				}
-			}
 		}
 	}
 }

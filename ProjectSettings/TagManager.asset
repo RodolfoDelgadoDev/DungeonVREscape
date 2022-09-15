@@ -7,6 +7,11 @@ TagManager:
   - Rune Water
   - Rune Earth
   - Rune Fire
+  - Sword
+  - Bosses
+  - Enemy
+  - ColliderSwordHint
+  - ColliderSwordHit
   layers:
   - Default
   - TransparentFX
@@ -14,9 +19,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Grab
+  - MenuCanvas
   - 
   - 
   - 
