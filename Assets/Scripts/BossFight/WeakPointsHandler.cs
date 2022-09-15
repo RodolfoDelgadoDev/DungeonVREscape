@@ -37,6 +37,8 @@ public class WeakPointsHandler : MonoBehaviour
 	/// </summary>
 	public GameObject battleMusic;
 
+	public GameObject hitonweakpoint;
+
 	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _swordHint;
 
@@ -74,6 +76,7 @@ public class WeakPointsHandler : MonoBehaviour
 					_gameManager.addOxygen.AddSeconds(60);
 					boss.SetActive(false);
 				}
+				hitonweakpoint.GetComponent<AudioSource>().Play();
 				this.gameObject.SetActive(false);
 			}
 		}

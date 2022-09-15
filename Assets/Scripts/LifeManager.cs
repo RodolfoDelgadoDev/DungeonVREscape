@@ -19,6 +19,11 @@ public class LifeManager : MonoBehaviour
 	/// </summary>
 	private bool _isImmortal = false;
 
+	/// <summary>
+	/// damageSound
+	/// </summary>
+	public GameObject damageSound;
+
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Enemy" && _isImmortal == false)
@@ -35,6 +40,7 @@ public class LifeManager : MonoBehaviour
 				SceneManager.LoadScene(2);
 			}
 			_isImmortal = true;
+			damageSound.GetComponent<AudioSource>().Play();
 			StartCoroutine(Immortality());
 		}
 	}

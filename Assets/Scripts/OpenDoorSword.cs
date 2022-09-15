@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Open doors when the player's sword collide with
@@ -32,7 +33,7 @@ public class OpenDoorSword : MonoBehaviour
 
 		if (_openDoor.name == "ExitDoor")
 		{
-			_oxygenCanvas.SetActive(false);
+			SceneManager.LoadScene(3);
 		}
 
 		_swordHint.SetActive(false);
