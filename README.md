@@ -26,6 +26,8 @@
 ## [Stylized Hand Painted Dungeon (Free) by L2S ARTS](https://assetstore.unity.com/packages/3d/environments/stylized-hand-painted-dungeon-free-173934)
 ## [Fantasy Moon sword](https://assetstore.unity.com/packages/3d/props/weapons/fantasy-moon-sword-155333)
 ## [Medieval UI](https://www.freepik.com/free-vector/cartoon-parchment-rolls-blank-scrolls-paper-banners_13100350.htm#&position=25&from_view=detail#&position=25&from_view=detail)
+## [retro punch](https://freesound.org/people/damnsatinist/sounds/493915/)
+## [samurai slash](https://freesound.org/people/nekoninja/sounds/370204/)
 
 ## Authors:
   - [Rodolfo Delgado](https://www.linkedin.com/in/rodolfo-delgado-alonso/)
