@@ -56,9 +56,6 @@ public class CountDownTimer : MonoBehaviour
 
 			FormatText();
 
-			if (slider.value == 0.4f)
-				audioTimer.Play();
-
 			yield return null;
 		}
 		while (timer > 0);
@@ -79,10 +76,12 @@ public class CountDownTimer : MonoBehaviour
 		{
 			Color32 col = new Color(1.0f, 0.92f, 0.016f, 1.0f);
 			timerText.color = col;
+			audioTimer.Play();
 		}
 		else if (seconds == (int)(startTime) / 4)
 		{
 			timerText.color = new Color32(222, 41, 22, 255);
+			audioTimer.Play();
 		}
 	}
 }

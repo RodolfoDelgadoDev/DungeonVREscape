@@ -40,8 +40,6 @@ public class WeakPointsHandler : MonoBehaviour
 	[SerializeField] GameManager _gameManager;
 	[SerializeField] GameObject _swordHint;
 
-	public GameObject slashSound;
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Sword")
@@ -76,7 +74,6 @@ public class WeakPointsHandler : MonoBehaviour
 					_gameManager.addOxygen.AddSeconds(60);
 					boss.SetActive(false);
 				}
-				slashSound.GetComponent<AudioSource>().Play();
 				this.gameObject.SetActive(false);
 			}
 		}
