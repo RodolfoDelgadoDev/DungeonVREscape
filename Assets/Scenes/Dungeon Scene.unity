@@ -2841,7 +2841,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
 --- !u!135 &72968100
@@ -11222,7 +11222,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
 --- !u!135 &199509668
@@ -15725,7 +15725,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
 --- !u!135 &316485553
@@ -16599,7 +16599,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
 --- !u!135 &335604776
@@ -38171,7 +38171,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1107485875}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 394268120}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 414025315}
 --- !u!135 &866424418
@@ -39005,7 +39005,7 @@ MonoBehaviour:
   - {fileID: 2972132735951253487}
   - {fileID: 2972132735951253486}
   - {fileID: 2972132735951253485}
-  damageSound: {fileID: 0}
+  damageSound: {fileID: 689274431}
 --- !u!4 &894042852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6218433352167629421, guid: e373e494e658be5459d465340412ce15, type: 3}
@@ -43721,7 +43721,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
 --- !u!135 &1031208502
@@ -59633,7 +59633,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
 --- !u!135 &1456439704
@@ -67023,7 +67023,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 1487057368}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1046764293}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 358199491}
 --- !u!135 &1674565495
@@ -68469,7 +68469,7 @@ MonoBehaviour:
   doorOnDeath: {fileID: 10075753}
   spawnMusic: {fileID: 1108332696}
   battleMusic: {fileID: 1138261504}
-  hitonweakpoint: {fileID: 0}
+  hitonweakpoint: {fileID: 1880881798}
   _gameManager: {fileID: 2084683735}
   _swordHint: {fileID: 843926165}
 --- !u!135 &1728204688
