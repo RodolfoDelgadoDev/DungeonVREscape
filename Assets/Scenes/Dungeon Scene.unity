@@ -88353,6 +88353,10 @@ PrefabInstance:
       propertyPath: _gameManager
       value: 
       objectReference: {fileID: 2084683735}
+    - target: {fileID: 1010493975353497618, guid: 6ba08deeeb2ab204f8dd8828156f4807, type: 3}
+      propertyPath: _swordSlashSfx
+      value: 
+      objectReference: {fileID: 1132145044}
     - target: {fileID: 1010493975353497622, guid: 6ba08deeeb2ab204f8dd8828156f4807, type: 3}
       propertyPath: _gameManager
       value: 
@@ -89063,6 +89067,10 @@ PrefabInstance:
       propertyPath: _gameManager
       value: 
       objectReference: {fileID: 2084683735}
+    - target: {fileID: 3853731943296936034, guid: eee5e1b34ec511e43b1069a075dd556f, type: 3}
+      propertyPath: _swordSlashSfx
+      value: 
+      objectReference: {fileID: 1132145044}
     - target: {fileID: 4340914554501273418, guid: eee5e1b34ec511e43b1069a075dd556f, type: 3}
       propertyPath: _openDoor
       value: 
