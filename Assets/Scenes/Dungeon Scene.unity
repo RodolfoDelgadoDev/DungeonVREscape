@@ -89045,7 +89045,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: f7e9d89a9249b4c429ba87980631f7c0, type: 3}
     - target: {fileID: 1407358180526042901, guid: a8a9c149fbf918d478262f87d4c908cd, type: 3}
       propertyPath: startTime
-      value: 120
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1407358180862009130, guid: a8a9c149fbf918d478262f87d4c908cd, type: 3}
       propertyPath: m_Transition
