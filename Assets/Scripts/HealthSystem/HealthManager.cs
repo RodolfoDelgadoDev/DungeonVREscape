@@ -1,12 +1,8 @@
 using System;
+using UnityEngine;
 
-public class HealthManager
+public class HealthManager : MonoBehaviour
 {
-    /// <summary> Occurs when damage is taken </summary>
-    public static event Action OnDamage;
-    /// <summary> Occurs when heal is taken </summary>
-    public static event Action OnHeal;
-
     private int _maxHealth = 6; // Change max health depending of the array size ?
     public int MaxHealth { get => _maxHealth; set => _maxHealth = value; }
 
@@ -23,23 +19,30 @@ public class HealthManager
     }
 
     /// <summary>
+    /// Get the health
+    /// </summary>
+    /// <returns>Health</returns>
+    public virtual int GetHealth()
+    {
+        return Health;
+    }
+
+    /// <summary>
     /// Used on heal
     /// </summary>
-    /// <param name="healValue"></param>
-    public void Heal(int healValue)
+    /// <param name="amount">heal amount</param>
+    public virtual void Heal(int amount)
     {
-        Health += healValue;
-        OnHeal?.Invoke();
+        Health += amount;
     }
 
     /// <summary>
     /// Used on damage taken
     /// </summary>
-    /// <param name="damageValue"></param>
-    public void Damage(int damageValue)
+    /// <param name="amount">damage amount</param>
+    public virtual void TakeDamage(int amount)
     {
-        Health -= damageValue;
-        OnDamage?.Invoke();
+        Health -= amount;
     }
 
 }
