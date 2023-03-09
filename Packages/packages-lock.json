@@ -28,6 +28,15 @@
         "com.unity.testtools.codecoverage": "1.0.1"
       }
     },
+    "com.unity.feature.vr": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.xr.oculus": "3.0.2",
+        "com.unity.xr.openxr": "1.5.3"
+      }
+    },
     "com.unity.ide.rider": {
       "version": "3.0.15",
       "depth": 1,

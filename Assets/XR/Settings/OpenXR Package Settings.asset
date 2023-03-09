@@ -99,6 +99,7 @@ MonoBehaviour:
   - {fileID: -3457280853444051531}
   - {fileID: -823871117805404599}
   - {fileID: -142285994737115768}
+  - {fileID: 6943379580848021434}
   - {fileID: -4259991512635086942}
   - {fileID: -4467914615676123070}
   - {fileID: 4373932252705042287}
@@ -423,11 +424,11 @@ MonoBehaviour:
   m_Name: MockRuntime Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Mock Runtime
+  version: 0.0.2
+  featureIdInternal: com.unity.openxr.feature.mockruntime
+  openxrExtensionStrings: XR_UNITY_null_gfx XR_UNITY_android_present
+  company: Unity
   priority: 0
   required: 0
   ignoreValidationErrors: 0
