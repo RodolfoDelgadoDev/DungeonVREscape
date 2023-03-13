@@ -1,48 +1,21 @@
-using System;
 using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    private int _maxHealth = 6; // Change max health depending of the array size ?
-    public int MaxHealth { get => _maxHealth; set => _maxHealth = value; }
+    public static HealthManager healthManager { get; private set; }
+    public PlayerHealth playerHealth;
 
-    private int _health;
-    public int Health
+    void Awake()
     {
-        get => _health;
-        set
+        // Check it there is more than 1 instance
+        if (healthManager != null && healthManager != this)
         {
-            Math.Clamp(value, 0, MaxHealth);
-
-            _health = value;
+            Destroy(this);
+        }
+        // Singleton
+        else
+        {
+            healthManager = this;
         }
     }
-
-    /// <summary>
-    /// Get the health
-    /// </summary>
-    /// <returns>Health</returns>
-    public virtual int GetHealth()
-    {
-        return Health;
-    }
-
-    /// <summary>
-    /// Used on heal
-    /// </summary>
-    /// <param name="amount">heal amount</param>
-    public virtual void Heal(int amount)
-    {
-        Health += amount;
-    }
-
-    /// <summary>
-    /// Used on damage taken
-    /// </summary>
-    /// <param name="amount">damage amount</param>
-    public virtual void TakeDamage(int amount)
-    {
-        Health -= amount;
-    }
-
 }

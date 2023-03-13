@@ -7,56 +7,74 @@ using UnityEngine;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-	#region Runes Variables
-	public WaterRuneTrigger waterRuneTrigger;
-	public EarthRuneTrigger earthRuneTrigger;
-	public FireRuneTrigger fireRuneTrigger;
-	public RunesCount runesCount;
-	#endregion
-	public Chests chests;
-	public OpenCloseDoors openCloseDoors;
-	public GameObject smokeVfxGameObject;
-	public AudioSource smokeSfx;
-	public CountDownTimer countDownTimer;
-	public AddOxygen addOxygen;
+    public static GameManager gameManager { get; private set; }
 
-	/// <summary>
-	/// Makes smoke appear where the GameObject go is,
-	/// disable the go
-	/// </summary>
-	/// <param name="go">GameObject to instantiate smoke at</param>
-	/// <returns></returns>
-	public IEnumerator SmokeOnDisable(GameObject go)
-	{
-		ParticleSystem smokeVfx = smokeVfxGameObject.GetComponent<ParticleSystem>();
-		Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
+    #region Variables To Change
+    #region Runes Variables
+    public WaterRuneTrigger waterRuneTrigger;
+    public EarthRuneTrigger earthRuneTrigger;
+    public FireRuneTrigger fireRuneTrigger;
+    public RunesCount runesCount;
+    #endregion
+    public Chests chests;
+    public OpenCloseDoors openCloseDoors;
+    public GameObject smokeVfxGameObject;
+    public AudioSource smokeSfx;
+    public CountDownTimer countDownTimer;
+    public AddOxygen addOxygen;
+    #endregion
 
-		Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
-		smokeSfx.Play();
+    void Awake()
+    {
+        // Check it there is more than 1 instance
+        if (gameManager != null && gameManager != this)
+        {
+            Destroy(this);
+        }
+        // Singleton
+        else
+        {
+            gameManager = this;
+        }
+    }
 
-		yield return new WaitForSeconds(smokeVfx.main.duration / 1.5f);
+    /// <summary>
+    /// Makes smoke appear where the GameObject go is,
+    /// disable the go
+    /// </summary>
+    /// <param name="go">GameObject to instantiate smoke at</param>
+    /// <returns></returns>
+    public IEnumerator SmokeOnDisable(GameObject go)
+    {
+        ParticleSystem smokeVfx = smokeVfxGameObject.GetComponent<ParticleSystem>();
+        Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
 
-		go.SetActive(false);
-	}
+        Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
+        smokeSfx.Play();
 
-	/// <summary>
-	/// Makes smoke appear where the GameOject go is,
-	/// spawn the go
-	/// </summary>
-	/// <param name="go">GameObject to instantiate smoke at</param>
-	/// <returns></returns>
-	public IEnumerator SmokeOnSpawn(GameObject go)
-	{
-		ParticleSystem smokeVfx = smokeVfxGameObject.GetComponent<ParticleSystem>();
-		Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
+        yield return new WaitForSeconds(smokeVfx.main.duration / 1.5f);
 
-		Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
-		smokeSfx.Play();
+        go.SetActive(false);
+    }
 
-		yield return new WaitForEndOfFrame();
+    /// <summary>
+    /// Makes smoke appear where the GameOject go is,
+    /// spawn the go
+    /// </summary>
+    /// <param name="go">GameObject to instantiate smoke at</param>
+    /// <returns></returns>
+    public IEnumerator SmokeOnSpawn(GameObject go)
+    {
+        ParticleSystem smokeVfx = smokeVfxGameObject.GetComponent<ParticleSystem>();
+        Vector3 smokeSpawnPos = new Vector3(go.transform.position.x, go.transform.position.y + 0.26f, go.transform.position.z);
 
-		go.SetActive(true);
-	}
+        Instantiate(smokeVfxGameObject, smokeSpawnPos, go.transform.rotation);
+        smokeSfx.Play();
+
+        yield return new WaitForEndOfFrame();
+
+        go.SetActive(true);
+    }
 
 
 }
